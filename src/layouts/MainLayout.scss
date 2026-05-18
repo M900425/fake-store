@@ -1,0 +1,32 @@
+@import "@/variables.scss";
+
+.main-layout-root {
+    min-height: 100vh;
+
+    .ant-layout-sider,
+    .ant-menu-dark {
+        background: $dark-navy !important;
+        border-right: 1px solid $black !important;
+    }
+
+    .ant-menu-dark .ant-menu-item {
+        color: $light-gray !important;
+        margin-left: 0;
+        width: 100%;
+
+        &.ant-menu-item-selected {
+            color: $white-clean !important;
+            background-color: $neutral-gray !important;
+        }
+    }
+
+    .ant-menu-item.ant-menu-item-selected::after {
+        width: $base-distance / 2 !important;
+        background-color: $white-clean !important;
+    }
+
+    .main-layout-content {
+        padding: $base-distance * 3;
+        background: $white-clean;
+    }
+}
