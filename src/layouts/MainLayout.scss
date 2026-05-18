@@ -3,10 +3,48 @@
 .main-layout-root {
     min-height: 100vh;
 
+    .sidebar-logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+        
+        &:hover {
+            opacity: 0.75;
+        }
+
+        .sidebar-logo-icon {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .sidebar-logo-title {
+            color: $white-clean;
+            font-size: 32px;
+        }
+    }
+    .ant-layout-sider-collapsed {
+        .sidebar-logo-title {
+            display: none;
+        }
+    }
+
+    .ant-layout-sider-trigger {
+        color: $white-clean !important;
+        background: $off-black !important;
+    }
+
     .ant-layout-sider,
     .ant-menu-dark {
         background: $dark-navy !important;
         border-right: 1px solid $black !important;
+
+        .anticon {
+            font-size: 20px !important;
+        }
     }
 
     .ant-menu-dark .ant-menu-item {
@@ -18,6 +56,10 @@
             color: $white-clean !important;
             background-color: $neutral-gray !important;
         }
+    }
+
+    .ant-menu-item {
+        font-size: 20px !important;
     }
 
     .ant-menu-item.ant-menu-item-selected::after {
