@@ -2,6 +2,8 @@
 
 A modern e-commerce web application built with **React**, **Vite**, and **TypeScript**, leveraging the public [Fake Store API](https://fakestoreapi.com).
 
+[🔗 Live Demo (Демо сайту)](https://fake-store-five-gold.vercel.app/catalog)
+
 ## 🚀 Tech Stack
 
 - **Framework / Bundler:** React 18 + Vite
