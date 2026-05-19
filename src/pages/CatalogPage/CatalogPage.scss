@@ -96,3 +96,27 @@
 .full-width {
     width: 100%;
 }
+
+.back-btn {
+    margin: $base-distance * 3;
+    font-size: $base-distance * 3;
+}
+
+.image-col {
+    text-align: center;
+    padding: $base-distance * 5;
+}
+
+.main-image {
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.info-space {
+    display: flex;
+}
+
+.no-margin {
+    margin: 0;
+}
