@@ -1,4 +1,4 @@
-@import "@/variables.scss";
+@import '@/variables.scss';
 
 .main-layout-root {
     min-height: 100vh;
@@ -11,7 +11,7 @@
         margin-bottom: 10px;
         cursor: pointer;
         transition: opacity 0.2s ease;
-        
+
         &:hover {
             opacity: 0.75;
         }
@@ -20,7 +20,7 @@
             width: 32px;
             height: 32px;
         }
-        
+
         .sidebar-logo-title {
             color: $white-clean;
             font-size: 32px;
@@ -35,6 +35,12 @@
     .ant-layout-sider-trigger {
         color: $white-clean !important;
         background: $off-black !important;
+    }
+
+    .ant-layout-sider {
+        position: sticky;
+        top: 0;
+        height: 100vh;
     }
 
     .ant-layout-sider,
@@ -60,6 +66,7 @@
 
     .ant-menu-item {
         font-size: 20px !important;
+        border-radius: 0 !important;
     }
 
     .ant-menu-item.ant-menu-item-selected::after {
@@ -68,7 +75,6 @@
     }
 
     .main-layout-content {
-        padding: $base-distance * 3;
         background: $white-clean;
     }
 }
