@@ -67,7 +67,6 @@ export default function FilterDrawer({
         setSearchParams(newParams);
         onClose();
     };
-
     const handleReset = () => {
         setSearchParams({});
         onClose();
@@ -89,7 +88,7 @@ export default function FilterDrawer({
                 </Space>
             }
         >
-            <Space direction="vertical" size="large" style={{ width: '100%' }}>
+            <Space direction="vertical" size="large" className="full-width">
                 <div>
                     <Text strong>Currency</Text>
                     <Radio.Group
@@ -165,7 +164,7 @@ export default function FilterDrawer({
                             onChange={(val) =>
                                 updateLocal('minPrice', val ?? 0)
                             }
-                            style={{ width: '100%' }}
+                            className="full-width"
                         />
                         <div>-</div>
                         <InputNumber
@@ -181,7 +180,7 @@ export default function FilterDrawer({
                             onChange={(val) =>
                                 updateLocal('maxPrice', val ?? currentMaxLimit)
                             }
-                            style={{ width: '100%' }}
+                            className="full-width"
                         />
                     </Space>
                 </div>

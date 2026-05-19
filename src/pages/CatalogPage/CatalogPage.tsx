@@ -5,6 +5,7 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useGetProductsQuery, useGetCategoriesQuery } from '@/api/productApi';
 import { useGetExchangeRatesQuery } from '@/api/exchangeApi';
 import FilterDrawer from './modals/FilterDrawer';
+import ProductDetail from './components/ProductDetail';
 import { CURRENCIES } from '@/constants/currencies';
 import './CatalogPage.scss';
 
@@ -23,7 +24,12 @@ export default function CatalogPage() {
     }, [category, navigate]);
 
     const activeCategory = category || 'all';
-    const queryCategory = activeCategory === 'all' ? undefined : activeCategory;
+    const isProductDetail = category && !isNaN(Number(category));
+    const queryCategory =
+        activeCategory === 'all' || isProductDetail
+            ? undefined
+            : activeCategory;
+
     const { data: products, isLoading: isProductsLoading } =
         useGetProductsQuery(queryCategory);
     const { data: categories } = useGetCategoriesQuery();
@@ -35,7 +41,7 @@ export default function CatalogPage() {
     const currentSymbol =
         CURRENCIES.find((c) => c.value === currentCurrency)?.symbol || '$';
     const filteredProducts = useMemo(() => {
-        if (!products) return [];
+        if (!products || isProductDetail) return [];
 
         const search = (searchParams.get('search') || '').toLowerCase();
         const sort = searchParams.get('sort') || 'default';
@@ -46,6 +52,7 @@ export default function CatalogPage() {
         const minRating = Number(searchParams.get('rating')) || 0;
 
         let result = [...products];
+
         if (search) {
             result = result.filter((p) =>
                 p.title.toLowerCase().includes(search),
@@ -72,7 +79,7 @@ export default function CatalogPage() {
             result.sort((a, b) => b.rating.rate - a.rating.rate);
 
         return result;
-    }, [products, searchParams, currentRate]);
+    }, [products, searchParams, currentRate, isProductDetail]);
 
     if (isProductsLoading || isRatesLoading) {
         return (
@@ -87,6 +94,24 @@ export default function CatalogPage() {
             </div>
         );
     }
+    if (isProductDetail && products) {
+        const product = products.find((p) => p.id === Number(category));
+
+        if (product) {
+            return (
+                <div className="catalog-page-root">
+                    <ProductDetail
+                        product={product}
+                        currentRate={currentRate}
+                        currentSymbol={currentSymbol}
+                        onBack={() =>
+                            navigate(`/catalog/all?${searchParams.toString()}`)
+                        }
+                    />
+                </div>
+            );
+        }
+    }
 
     const tabItems = [
         { key: 'all', label: 'ALL' },
@@ -95,18 +120,15 @@ export default function CatalogPage() {
             label: cat.toUpperCase(),
         })) || []),
     ];
-
     const handleTabChange = (key: string) => {
         navigate(`/catalog/${key}?${searchParams.toString()}`);
     };
-
     const tabBarExtra = {
         right: (
             <Button
                 type="primary"
                 icon={<FilterOutlined />}
                 onClick={() => setIsFilterDrawerOpen(true)}
-                style={{ borderRadius: '8px' }}
             >
                 Filters
             </Button>
@@ -117,7 +139,7 @@ export default function CatalogPage() {
         <div className="catalog-page-root">
             <div className="header">
                 <div className="catalog-header">
-                    <Title level={2} style={{ margin: 0 }}>
+                    <Title level={2} className="no-margin">
                         Catalog
                     </Title>
                 </div>
@@ -129,81 +151,81 @@ export default function CatalogPage() {
                     tabBarExtraContent={tabBarExtra}
                 />
             </div>
-            <Spin
-                spinning={isProductsLoading}
-                size="large"
-                tip="Loading products..."
-            >
-                <Row className="catalog-products-row" gutter={[24, 24]}>
-                    {filteredProducts.map((product) => {
-                        const displayPrice = (
-                            product.price * currentRate
-                        ).toFixed(2);
+            <Row className="catalog-products-row" gutter={[24, 24]}>
+                {filteredProducts.map((product) => {
+                    const displayPrice = (product.price * currentRate).toFixed(
+                        2,
+                    );
 
-                        return (
-                            <Col xs={24} sm={12} md={8} lg={6} key={product.id}>
-                                <Card
-                                    hoverable
-                                    className="product-card"
-                                    cover={
-                                        <div className="product-image-container">
-                                            <img
-                                                alt={product.title}
-                                                src={product.image}
-                                                className="product-image"
-                                            />
+                    return (
+                        <Col xs={24} sm={12} md={8} lg={6} key={product.id}>
+                            <Card
+                                hoverable
+                                className="product-card"
+                                onClick={() =>
+                                    navigate(
+                                        `/catalog/${product.id}?${searchParams.toString()}`,
+                                    )
+                                }
+                                cover={
+                                    <div className="product-image-container">
+                                        <img
+                                            alt={product.title}
+                                            src={product.image}
+                                            className="product-image"
+                                        />
+                                    </div>
+                                }
+                                actions={[
+                                    <Button
+                                        type="primary"
+                                        icon={<ShoppingCartOutlined />}
+                                        className="add-to-cart-btn"
+                                        onClick={(e) => e.stopPropagation()}
+                                    >
+                                        Add to Cart
+                                    </Button>,
+                                ]}
+                            >
+                                <Card.Meta
+                                    title={
+                                        <span className="product-title">
+                                            {product.title}
+                                        </span>
+                                    }
+                                    description={
+                                        <div className="product-details">
+                                            <Text
+                                                strong
+                                                className="product-price"
+                                            >
+                                                {currentSymbol}
+                                                {displayPrice}
+                                            </Text>
+                                            <div className="product-rating">
+                                                <Rate
+                                                    disabled
+                                                    defaultValue={
+                                                        product.rating.rate
+                                                    }
+                                                    allowHalf
+                                                    className="rating-stars"
+                                                />
+                                                <Text
+                                                    type="secondary"
+                                                    className="rating-count"
+                                                >
+                                                    ({product.rating.count})
+                                                </Text>
+                                            </div>
                                         </div>
                                     }
-                                    actions={[
-                                        <Button
-                                            type="primary"
-                                            icon={<ShoppingCartOutlined />}
-                                            className="add-to-cart-btn"
-                                        >
-                                            Add to Cart
-                                        </Button>,
-                                    ]}
-                                >
-                                    <Card.Meta
-                                        title={
-                                            <span className="product-title">
-                                                {product.title}
-                                            </span>
-                                        }
-                                        description={
-                                            <div className="product-details">
-                                                <Text
-                                                    strong
-                                                    className="product-price"
-                                                >
-                                                    {currentSymbol}
-                                                    {displayPrice}
-                                                </Text>
-                                                <div className="product-rating">
-                                                    <Rate
-                                                        disabled
-                                                        defaultValue={
-                                                            product.rating.rate
-                                                        }
-                                                        allowHalf
-                                                        className="rating-stars"
-                                                    />
-                                                    <Text
-                                                        type="secondary"
-                                                        className="rating-count"
-                                                    >
-                                                        ({product.rating.count})
-                                                    </Text>
-                                                </div>
-                                            </div>
-                                        }
-                                    />
-                                </Card>
-                            </Col>
-                        );
-                    })}
-                </Row>
-            </Spin>
+                                />
+                            </Card>
+                        </Col>
+                    );
+                })}
+            </Row>
             <FilterDrawer
                 open={isFilterDrawerOpen}
                 onClose={() => setIsFilterDrawerOpen(false)}
