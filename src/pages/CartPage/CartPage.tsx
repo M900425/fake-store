@@ -1,13 +1,4 @@
-import {
-    Typography,
-    Table,
-    Button,
-    Space,
-    InputNumber,
-    Spin,
-    Row,
-    Col,
-} from 'antd';
+import { Typography, Table, Button, Space, InputNumber, Row, Col } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -20,6 +11,7 @@ import {
 import { useGetExchangeRatesQuery } from '@/api/exchangeApi';
 import { CURRENCIES } from '@/constants/currencies';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
 import './CartPage.scss';
 
 const { Title, Text } = Typography;
@@ -34,11 +26,7 @@ export default function CartPage() {
         useGetExchangeRatesQuery();
 
     if (isRatesLoading || !exchangeData) {
-        return (
-            <div className="cart-loader">
-                <Spin size="large" tip="Loading cart..." />
-            </div>
-        );
+        return <LoadingSpinner tip="Loading data..." />;
     }
 
     const exchangeRates = exchangeData.rates;

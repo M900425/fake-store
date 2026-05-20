@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Card, Row, Col, Typography, Tabs, Button, Rate, Spin } from 'antd';
+import { Card, Row, Col, Typography, Tabs, Button, Rate } from 'antd';
 import { ShoppingCartOutlined, FilterOutlined } from '@ant-design/icons';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -9,6 +9,7 @@ import { useGetExchangeRatesQuery } from '@/api/exchangeApi';
 import FilterDrawer from './modals/FilterDrawer';
 import ProductDetail from './components/ProductDetail';
 import { CURRENCIES } from '@/constants/currencies';
+import { LoadingSpinner } from '@/components/LoadingSpinner';
 import './CatalogPage.scss';
 
 const { Title, Text } = Typography;
@@ -87,17 +88,7 @@ export default function CatalogPage() {
     }, [products, searchParams, currentRate, isProductDetail]);
 
     if (isProductsLoading || isRatesLoading) {
-        return (
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    marginTop: '100px',
-                }}
-            >
-                <Spin size="large" tip="Loading data..." />
-            </div>
-        );
+        return <LoadingSpinner tip="Loading data..." />;
     }
     if (isProductDetail && products) {
         const product = products.find((p) => p.id === Number(category));
