@@ -89,4 +89,13 @@
             background-color: $orange !important;
         }
     }
+
+    .ant-layout-sider-collapsed {
+        .cart-badge {
+            .ant-badge-count {
+                top: 10px !important;
+                right: 0 !important;
+            }
+        }
+    }
 }
