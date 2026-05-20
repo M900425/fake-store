@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Badge } from 'antd';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import {
     ShoppingCartOutlined,
     ShopOutlined,
     UserOutlined,
 } from '@ant-design/icons';
+import { useSelector } from 'react-redux';
+import { type RootState } from '@/store/store';
 import './MainLayout.scss';
 
 const { Sider, Content } = Layout;
@@ -14,6 +16,8 @@ export default function MainLayout() {
     const navigate = useNavigate();
     const location = useLocation();
     const [collapsed, setCollapsed] = useState(false);
+    const cartItems = useSelector((state: RootState) => state.cart.items);
+    const uniqueItemCount = cartItems.length;
     const menuItems = [
         {
             key: '/catalog/all',
@@ -22,7 +26,11 @@ export default function MainLayout() {
         },
         {
             key: '/cart',
-            icon: <ShoppingCartOutlined />,
+            icon: (
+                <Badge count={uniqueItemCount} className="cart-badge">
+                    <ShoppingCartOutlined />
+                </Badge>
+            ),
             label: 'Cart',
         },
         {

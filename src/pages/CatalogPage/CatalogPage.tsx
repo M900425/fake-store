@@ -2,6 +2,8 @@ import { useState, useEffect, useMemo } from 'react';
 import { Card, Row, Col, Typography, Tabs, Button, Rate, Spin } from 'antd';
 import { ShoppingCartOutlined, FilterOutlined } from '@ant-design/icons';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '@/store/cartSlice';
 import { useGetProductsQuery, useGetCategoriesQuery } from '@/api/productApi';
 import { useGetExchangeRatesQuery } from '@/api/exchangeApi';
 import FilterDrawer from './modals/FilterDrawer';
@@ -16,6 +18,7 @@ export default function CatalogPage() {
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();
     const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         if (!category) {
@@ -36,7 +39,9 @@ export default function CatalogPage() {
     const { data: exchangeData, isLoading: isRatesLoading } =
         useGetExchangeRatesQuery();
     const exchangeRates = exchangeData?.rates || {};
-    const currentCurrency = searchParams.get('currency') || 'USD';
+    const savedCurrency = localStorage.getItem('appCurrency');
+    const currentCurrency =
+        searchParams.get('currency') || savedCurrency || 'USD';
     const currentRate = exchangeRates?.[currentCurrency] || 1;
     const currentSymbol =
         CURRENCIES.find((c) => c.value === currentCurrency)?.symbol || '$';
@@ -107,6 +112,7 @@ export default function CatalogPage() {
                         onBack={() =>
                             navigate(`/catalog/all?${searchParams.toString()}`)
                         }
+                        onAddToCart={() => dispatch(addToCart(product))}
                     />
                 </div>
             );
@@ -181,7 +187,10 @@ export default function CatalogPage() {
                                         type="primary"
                                         icon={<ShoppingCartOutlined />}
                                         className="add-to-cart-btn"
-                                        onClick={(e) => e.stopPropagation()}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            dispatch(addToCart(product));
+                                        }}
                                     >
                                         Add to Cart
                                     </Button>,

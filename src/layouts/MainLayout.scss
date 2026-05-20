@@ -77,4 +77,16 @@
     .main-layout-content {
         background: $white-clean;
     }
+
+    .cart-badge {
+        .ant-scroll-number {
+            width: 12px !important;
+            height: 12px !important;
+            min-width: 12px !important;
+            border-radius: 50% !important;
+            padding: 0 !important;
+            font-size: 8px !important;
+            background-color: $orange !important;
+        }
+    }
 }
