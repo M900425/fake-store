@@ -9,6 +9,7 @@ interface IProps {
     currentRate: number;
     currentSymbol: string;
     onBack: () => void;
+    onAddToCart: () => void;
 }
 
 export default function ProductDetail({
@@ -16,6 +17,7 @@ export default function ProductDetail({
     currentRate,
     currentSymbol,
     onBack,
+    onAddToCart,
 }: IProps) {
     const displayPrice = (product.price * currentRate).toFixed(2);
 
@@ -46,11 +48,9 @@ export default function ProductDetail({
                         <Text type="secondary">
                             {product.category.toUpperCase()}
                         </Text>
-
                         <Title level={2} className="no-margin">
                             {product.title}
                         </Title>
-
                         <Space>
                             <Rate
                                 disabled
@@ -61,7 +61,6 @@ export default function ProductDetail({
                                 ({product.rating.count} reviews)
                             </Text>
                         </Space>
-
                         <Title level={1} className="no-margin">
                             {currentSymbol}
                             {displayPrice}
@@ -78,6 +77,7 @@ export default function ProductDetail({
                             type="primary"
                             size="large"
                             icon={<ShoppingCartOutlined />}
+                            onClick={onAddToCart}
                         >
                             Add to Cart
                         </Button>

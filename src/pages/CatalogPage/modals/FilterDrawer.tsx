@@ -22,7 +22,9 @@ export default function FilterDrawer({
 }: FilterDrawerProps) {
     const [searchParams, setSearchParams] = useSearchParams();
     const initialFilters = useMemo(() => {
-        const currentCurrency = searchParams.get('currency') || 'USD';
+        const savedCurrency = localStorage.getItem('appCurrency');
+        const currentCurrency =
+            searchParams.get('currency') || savedCurrency || 'USD';
         const rate = exchangeRates?.[currentCurrency] || 1;
 
         return {
@@ -35,7 +37,6 @@ export default function FilterDrawer({
             rating: Number(searchParams.get('rating')) || 0,
         };
     }, [searchParams, exchangeRates]);
-
     const [localFilters, setLocalFilters] = useState(initialFilters);
     const updateLocal = (
         key: keyof typeof localFilters,
@@ -63,6 +64,8 @@ export default function FilterDrawer({
             newParams.set('maxPrice', String(localFilters.maxPrice));
         if (localFilters.rating > 0)
             newParams.set('rating', String(localFilters.rating));
+
+        localStorage.setItem('appCurrency', localFilters.currency);
 
         setSearchParams(newParams);
         onClose();
