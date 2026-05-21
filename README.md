@@ -1,43 +1,92 @@
 # Fake Store E-Commerce Project
 
-A modern e-commerce web application built with **React**, **Vite**, and **TypeScript**, leveraging the public [Fake Store API](https://fakestoreapi.com).
+A comprehensive, modern e-commerce web application built with React, Vite, and TypeScript. The project provides a realistic shopping experience by integrating the Fake Store API, the Exchange Rate API, and a custom mock-payment system.
 
-[🔗 Live Demo ](https://fake-store-five-gold.vercel.app)
+## 🔗 Live Demo
 
-## 🚀 Tech Stack
+[View Live Demo](https://fake-store-five-gold.vercel.app/)
 
-- **Framework / Bundler:** React 18 + Vite
-- **Language:** TypeScript (Strict Typing)
-- **Styling:** SCSS (Sass) + [Ant Design](https://ant.design/) (Component Library)
-- **Routing:** React Router DOM
-- **Internationalization (i18n):** i18next + react-i18next (Supporting 4 languages: EN, UA, FR, PL)
-- **Linter:** ESLint (Flat Config)
+---
+
+## 🚀 Key Features
+
+- **Product Catalog:** Dynamic browsing with category filtering, real-time search, and sorting.
+- **Global Currency Support:** Real-time price conversion across multiple currencies powered by the Exchange Rate API.
+- **Shopping Cart:** Persistent cart management with quantity updates, item removal, and full-cart clearance with confirmation modals.
+- **User Authentication:** Simulated secure login system that protects the checkout flow.
+- **Checkout Flow:** Functional mock-payment simulation using user profile data.
+- **Internationalization (i18n):** Extensive localization supporting 26 languages using i18next for a global user experience.
+- **UX Enhancements:** Sticky footer actions in filters, clickable navigation between Cart and Product Details, and global notification feedback powered by Ant Design.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Core:** React 18, Vite, TypeScript
+- **State Management:** Redux Toolkit
+- **Data Fetching:** RTK Query (Fake Store API & Exchange Rate API integration)
+- **Styling:** SCSS, Ant Design
+- **Routing:** React Router DOM (v6+)
+- **Localization:** i18next & react-i18next
+
+---
 
 ## 📁 Project Structure
 
-The project follows a modular, layered architecture designed for scalability and maintainability:
+```plaintext
+src/
+├── api/           # RTK Query definitions (Product & Exchange APIs)
+├── assets/        # Global styles and static assets
+├── components/    # Generic UI components (Buttons, Spinners, Modals)
+├── constants/     # Configs (Mock profile, Currency symbols)
+├── hooks/         # Custom React hooks (useLocalStorage, etc.)
+├── layouts/       # Main layout shells & Navigation components
+├── locales/       # i18n JSON translation files
+├── pages/         # View layers (Catalog, Cart, Checkout, Login, Profile)
+├── store/         # Redux store (Cart, Auth slices)
+└── types/         # TypeScript interfaces
+```
 
-- `src/api/` — API client and request configurations for the Fake Store API.
-- `src/components/` — Shared, generic UI components (Buttons, Inputs, Modals, etc.).
-- `src/entities/` — Business domain-specific components and logic (e.g., Product cards).
-- `src/helpers/` — Pure utility and helper functions.
-- `src/hooks/` — Custom React hooks.
-- `src/layouts/` — Page wraps and layout shells (Header, Footer, etc.).
-- `src/locales/` — Localization files (JSON dictionaries) and i18n configurations.
-- `src/pages/` — Main application views and pages (Home, Cart, ProductDetails, etc.).
-- `src/types/` — Global TypeScript interfaces and type definitions.
+---
 
-## 🛠️ Development Guidelines
+## ⚙️ Development Guidelines
 
-- **Absolute Imports:** To maintain a clean codebase, the `@/` path alias is configured. Always use `@/components` instead of deep relative paths like `../../components`.
-- **Strict Typing:** The use of the implicit or explicit `any` type is strictly forbidden by ESLint configuration. All data fetched from the API or passed through components must be properly typed. If using `any` is temporarily unavoidable, a code comment must be provided specifying where to look for the correct typing structure.
+- **Absolute Imports:** Use the `@/` alias (e.g. `@/components/Button`) for cleaner imports.
+- **Strict Typing:** All API responses and component props must be explicitly typed.
+- **Localization:** All hardcoded text must be extracted into `locales/*.json` files and accessed via `t('key')`.
 
-## ⚙️ Getting Started
+---
 
-### 1. Install dependencies
+## 📦 Getting Started
 
-Run the following command in the project root directory:
+### 1. Installation
+
+Clone the repository and install dependencies:
 
 ```bash
 npm install
 ```
+
+### 2. Run in Development
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 APIs & Libraries
+
+- [Fake Store API](https://fakestoreapi.com/)
+- [Exchange Rate API](https://www.exchangerate-api.com/)
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
+- [Ant Design](https://ant.design/)
+- [i18next](https://www.i18next.com/)
+- [react-i18next](https://react.i18next.com/)
+
+---
