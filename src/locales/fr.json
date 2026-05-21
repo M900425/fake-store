@@ -1,1 +1,164 @@
-{}
+{
+    "loginPrompt": {
+        "title": "Accès restreint",
+        "subTitle": "Veuillez vous connecter pour voir votre profil et l'historique de vos commandes.",
+        "cta": "Se connecter"
+    },
+    "categories": {
+        "all": "TOUT",
+        "electronics": "Électronique",
+        "jewelery": "Bijouterie",
+        "men's clothing": "Vêtements homme",
+        "women's clothing": "Vêtements femme"
+    },
+    "cartPage": {
+        "title": "Panier",
+        "clearCart": "Vider le panier",
+        "emptyMessage": "Votre panier est actuellement vide.",
+        "goToCatalog": "Aller au catalogue",
+        "total": "Total :",
+        "proceedToCheckout": "Passer à la caisse",
+        "loading": "Chargement des données...",
+        "messages": {
+            "itemRemoved": "Article retiré du panier",
+            "cartCleared": "Panier vidé avec succès",
+            "loginRequired": "Veuillez vous connecter à votre profil pour passer une commande."
+        },
+        "columns": {
+            "product": "Produit",
+            "price": "Prix",
+            "quantity": "Quantité",
+            "total": "Total",
+            "action": "Action"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Retirer l'article",
+                "content": "Êtes-vous sûr de vouloir retirer cet article de votre panier ?",
+                "ok": "Oui, retirer",
+                "cancel": "Annuler"
+            },
+            "clearCart": {
+                "title": "Vider le panier",
+                "content": "Êtes-vous sûr de vouloir retirer tous les articles de votre panier ?",
+                "ok": "Oui, vider",
+                "cancel": "Annuler"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Catalogue",
+        "filters": "Filtres",
+        "addToCart": "Ajouter au panier",
+        "loading": "Chargement des données...",
+        "messages": {
+            "addedToCart": "Produit ajouté au panier !"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrer les produits",
+        "resetAll": "Tout réinitialiser",
+        "apply": "Appliquer",
+        "currency": "Devise",
+        "search": "Recherche",
+        "searchPlaceholder": "Tapez le nom du produit...",
+        "sortBy": "Trier par",
+        "sortOptions": {
+            "default": "Par défaut",
+            "priceAsc": "Prix ↑",
+            "priceDesc": "Prix ↓",
+            "ratingDesc": "Mieux notés"
+        },
+        "priceRange": "Gamme de prix",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Avis clients",
+        "ratingOptions": {
+            "any": "Tous",
+            "fourAndAbove": "4★ et plus",
+            "threeAndAbove": "3★ et plus"
+        },
+        "messages": {
+            "applied": "Filtres appliqués avec succès",
+            "reset": "Filtres réinitialisés par défaut"
+        }
+    },
+    "productDetail": {
+        "backCart": "Retour au panier",
+        "back": "Retour au catalogue",
+        "reviews": "avis",
+        "description": "Description",
+        "addToCart": "Ajouter au panier",
+        "messages": {
+            "addedToCart": "Produit ajouté au panier !"
+        }
+    },
+    "loginPage": {
+        "title": "Connexion",
+        "hint": "Astuce : utilisez <b>mor_2314</b> et <b>83r5^_</b>",
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "signIn": "Se connecter",
+        "backToCatalog": "Retour au catalogue",
+        "validation": {
+            "username": "Veuillez entrer votre nom d'utilisateur !",
+            "password": "Veuillez entrer votre mot de passe !"
+        },
+        "messages": {
+            "success": "Connexion réussie !",
+            "error": "Nom d'utilisateur ou mot de passe invalide"
+        }
+    },
+    "profilePage": {
+        "title": "Mon profil",
+        "logout": "Se déconnecter",
+        "accountDetails": "Détails du compte",
+        "deliveryAddress": "Adresse de livraison",
+        "paymentMethod": "Méthode de paiement",
+        "labels": {
+            "username": "Nom d'utilisateur :",
+            "address": "Adresse :",
+            "card": "Carte :"
+        },
+        "orderHistory": "Historique des commandes",
+        "noOrders": "Aucune commande trouvée.",
+        "messages": {
+            "logoutSuccess": "Déconnexion réussie"
+        },
+        "modals": {
+            "logout": {
+                "title": "Se déconnecter",
+                "content": "Êtes-vous sûr de vouloir vous déconnecter ?",
+                "ok": "Oui, se déconnecter",
+                "cancel": "Annuler"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Catalogue",
+        "cart": "Panier",
+        "profile": "Profil",
+        "notLoggedIn": "Non connecté"
+    },
+    "checkoutPage": {
+        "title": "Finaliser la commande",
+        "warning": "* Ceci est une page de démonstration. Les champs sont remplis automatiquement et ne peuvent pas être modifiés.",
+        "cardTitle": "Détails de livraison et de paiement",
+        "labels": {
+            "ownerName": "Nom du titulaire",
+            "country": "Pays",
+            "street": "Rue",
+            "city": "Ville",
+            "cardNumber": "Numéro de carte",
+            "expiry": "Date d'expiration",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Retour",
+            "confirmAndPay": "Confirmer et payer"
+        },
+        "messages": {
+            "success": "Paiement réussi ! Ceci est une commande de test."
+        }
+    }
+}

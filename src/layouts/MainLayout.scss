@@ -85,7 +85,7 @@
             min-width: 12px !important;
             border-radius: 50% !important;
             padding: 0 !important;
-            font-size: 8px !important;
+            font-size: $base-distance !important;
             background-color: $orange !important;
         }
     }
@@ -97,5 +97,96 @@
                 right: 0 !important;
             }
         }
+    }
+
+    .sider-inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sider-top {
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .sidebar-user-section {
+        display: flex;
+        align-items: center;
+        padding: $base-distance * 2;
+        cursor: pointer;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        transition: background-color 0.2s ease;
+        overflow: hidden;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .sidebar-avatar {
+            flex-shrink: 0;
+            background-color: $neutral-gray;
+            color: $white-clean;
+        }
+
+        .sidebar-username {
+            margin-left: 12px;
+            color: $light-gray;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .ant-layout-sider-collapsed {
+        .sidebar-user-section {
+            justify-content: center;
+            padding: $base-distance * 2 0;
+
+            .sidebar-username {
+                display: none;
+            }
+        }
+    }
+    .sider-bottom {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        .sidebar-lang-section {
+            padding: $base-distance * 2 $base-distance * 2;
+            color: $light-gray;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: $base-distance;
+            transition: background-color 0.2s;
+
+            .anticon {
+                font-size: $base-distance * 4 !important;
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+    .ant-layout-sider-collapsed {
+        .sidebar-lang-section {
+            justify-content: center;
+            span {
+                display: none;
+            }
+            .anticon {
+                display: block;
+            }
+        }
+    }
+}
+
+.language-list {
+    .ant-dropdown-menu {
+        max-height: 55vh !important;
     }
 }

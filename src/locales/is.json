@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Aðgangur takmarkaður",
+        "subTitle": "Vinsamlegast skráðu þig inn til að skoða prófílinn þinn og pöntunarsögu.",
+        "cta": "Fara í innskráningu"
+    },
+    "categories": {
+        "all": "ALLT",
+        "electronics": "Rafeindatækni",
+        "jewelery": "Skartgripir",
+        "men's clothing": "Karlmannafatnaður",
+        "women's clothing": "Kvenmannafatnaður"
+    },
+    "cartPage": {
+        "title": "Innkaupakörfa",
+        "clearCart": "Tæma körfu",
+        "emptyMessage": "Karfan þín er tóm.",
+        "goToCatalog": "Fara í vörulista",
+        "total": "Samtals:",
+        "proceedToCheckout": "Ganga frá pöntun",
+        "loading": "Hleð...",
+        "messages": {
+            "itemRemoved": "Hlutur fjarlægður úr körfu",
+            "cartCleared": "Karfa tæmd",
+            "loginRequired": "Vinsamlegast skráðu þig inn á prófílinn þinn til að leggja inn pöntun."
+        },
+        "columns": {
+            "product": "Vara",
+            "price": "Verð",
+            "quantity": "Magn",
+            "total": "Samtals",
+            "action": "Aðgerð"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Fjarlægja vöru",
+                "content": "Ertu viss um að þú viljir fjarlægja þessa vöru úr körfunni?",
+                "ok": "Já, fjarlægja",
+                "cancel": "Hætta við"
+            },
+            "clearCart": {
+                "title": "Tæma körfu",
+                "content": "Ertu viss um að þú viljir fjarlægja allar vörur úr körfunni?",
+                "ok": "Já, tæma",
+                "cancel": "Hætta við"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Vörulisti",
+        "filters": "Síur",
+        "addToCart": "Bæta í körfu",
+        "loading": "Hleð...",
+        "messages": {
+            "addedToCart": "Vara bætt í körfu!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Sía vörur",
+        "resetAll": "Endurstilla allt",
+        "apply": "Virkja",
+        "currency": "Gjaldmiðill",
+        "search": "Leita",
+        "searchPlaceholder": "Sláðu inn nafn vöru...",
+        "sortBy": "Flokka eftir",
+        "sortOptions": {
+            "default": "Sjálfgefið",
+            "priceAsc": "Verð ↑",
+            "priceDesc": "Verð ↓",
+            "ratingDesc": "Hæsta einkunn"
+        },
+        "priceRange": "Verðbil",
+        "min": "Lágm",
+        "max": "Hám",
+        "customerRating": "Einkunn viðskiptavina",
+        "ratingOptions": {
+            "any": "Allt",
+            "fourAndAbove": "4★ og hærra",
+            "threeAndAbove": "3★ og hærra"
+        },
+        "messages": {
+            "applied": "Síur virkjaðar",
+            "reset": "Síur endurstilltar"
+        }
+    },
+    "productDetail": {
+        "backCart": "Til baka í körfu",
+        "back": "Til baka í vörulista",
+        "reviews": "umsagnir",
+        "description": "Lýsing",
+        "addToCart": "Bæta í körfu",
+        "messages": {
+            "addedToCart": "Vara bætt í körfu!"
+        }
+    },
+    "loginPage": {
+        "title": "Innskráning",
+        "hint": "Ábending: notaðu <b>mor_2314</b> og <b>83r5^_</b>",
+        "username": "Notendanafn",
+        "password": "Lykilorð",
+        "signIn": "Skrá inn",
+        "backToCatalog": "Til baka í vörulista",
+        "validation": {
+            "username": "Vinsamlegast sláðu inn notendanafn!",
+            "password": "Vinsamlegast sláðu inn lykilorð!"
+        },
+        "messages": {
+            "success": "Innskráning tókst!",
+            "error": "Rangt notendanafn eða lykilorð"
+        }
+    },
+    "profilePage": {
+        "title": "Prófíll",
+        "logout": "Skrá út",
+        "accountDetails": "Reikningsupplýsingar",
+        "deliveryAddress": "Afhendingarheimilisfang",
+        "paymentMethod": "Greiðslumáti",
+        "labels": {
+            "username": "Notendanafn:",
+            "address": "Heimilisfang:",
+            "card": "Kort:"
+        },
+        "orderHistory": "Pöntunarsaga",
+        "noOrders": "Engar pantanir fundust.",
+        "messages": {
+            "logoutSuccess": "Útskráning tókst"
+        },
+        "modals": {
+            "logout": {
+                "title": "Skrá út",
+                "content": "Ertu viss um að þú viljir skrá þig út?",
+                "ok": "Já, skrá út",
+                "cancel": "Hætta við"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Vörulisti",
+        "cart": "Karfa",
+        "profile": "Prófíll",
+        "notLoggedIn": "Ekki skráður inn"
+    },
+    "checkoutPage": {
+        "title": "Ganga frá pöntun",
+        "warning": "* Þetta er prufusíða. Reitirnir eru sjálfkrafa útfylltir og ekki hægt að breyta þeim.",
+        "cardTitle": "Upplýsingar um afhendingu og greiðslu",
+        "labels": {
+            "ownerName": "Nafn korthafa",
+            "country": "Land",
+            "street": "Gata",
+            "city": "Borg",
+            "cardNumber": "Kortanúmer",
+            "expiry": "Gildistími",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Til baka",
+            "confirmAndPay": "Staðfesta og greiða"
+        },
+        "messages": {
+            "success": "Greiðsla tókst! Þetta er prófunarpöntun."
+        }
+    }
+}

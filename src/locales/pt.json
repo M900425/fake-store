@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Acesso restrito",
+        "subTitle": "Inicie sessão para ver o seu perfil e o histórico de pedidos.",
+        "cta": "Ir para login"
+    },
+    "categories": {
+        "all": "TODOS",
+        "electronics": "Eletrónica",
+        "jewelery": "Jóias",
+        "men's clothing": "Roupa de homem",
+        "women's clothing": "Roupa de senhora"
+    },
+    "cartPage": {
+        "title": "Carrinho de compras",
+        "clearCart": "Limpar carrinho",
+        "emptyMessage": "O seu carrinho está vazio.",
+        "goToCatalog": "Ir para o catálogo",
+        "total": "Total:",
+        "proceedToCheckout": "Finalizar compra",
+        "loading": "A carregar dados...",
+        "messages": {
+            "itemRemoved": "Item removido do carrinho",
+            "cartCleared": "Carrinho limpo com sucesso",
+            "loginRequired": "Por favor, inicie sessão no seu perfil para fazer uma encomenda."
+        },
+        "columns": {
+            "product": "Produto",
+            "price": "Preço",
+            "quantity": "Quantidade",
+            "total": "Total",
+            "action": "Ação"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Remover item",
+                "content": "Tem a certeza que deseja remover este item do carrinho?",
+                "ok": "Sim, remover",
+                "cancel": "Cancelar"
+            },
+            "clearCart": {
+                "title": "Limpar carrinho",
+                "content": "Tem a certeza que deseja remover todos os itens do carrinho?",
+                "ok": "Sim, limpar",
+                "cancel": "Cancelar"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Catálogo",
+        "filters": "Filtros",
+        "addToCart": "Adicionar ao carrinho",
+        "loading": "A carregar dados...",
+        "messages": {
+            "addedToCart": "Produto adicionado ao carrinho!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrar produtos",
+        "resetAll": "Limpar tudo",
+        "apply": "Aplicar",
+        "currency": "Moeda",
+        "search": "Pesquisar",
+        "searchPlaceholder": "Escreva o nome do produto...",
+        "sortBy": "Ordenar por",
+        "sortOptions": {
+            "default": "Predefinido",
+            "priceAsc": "Preço ↑",
+            "priceDesc": "Preço ↓",
+            "ratingDesc": "Mais bem avaliado"
+        },
+        "priceRange": "Intervalo de preço",
+        "min": "Mín",
+        "max": "Máx",
+        "customerRating": "Avaliação do cliente",
+        "ratingOptions": {
+            "any": "Qualquer",
+            "fourAndAbove": "4★ ou superior",
+            "threeAndAbove": "3★ ou superior"
+        },
+        "messages": {
+            "applied": "Filtros aplicados",
+            "reset": "Filtros repostos"
+        }
+    },
+    "productDetail": {
+        "backCart": "Voltar ao carrinho",
+        "back": "Voltar ao catálogo",
+        "reviews": "avaliações",
+        "description": "Descrição",
+        "addToCart": "Adicionar ao carrinho",
+        "messages": {
+            "addedToCart": "Produto adicionado ao carrinho!"
+        }
+    },
+    "loginPage": {
+        "title": "Iniciar sessão",
+        "hint": "Dica: use <b>mor_2314</b> e <b>83r5^_</b>",
+        "username": "Nome de utilizador",
+        "password": "Palavra-passe",
+        "signIn": "Iniciar sessão",
+        "backToCatalog": "Voltar ao catálogo",
+        "validation": {
+            "username": "Por favor, introduza o nome de utilizador!",
+            "password": "Por favor, introduza a palavra-passe!"
+        },
+        "messages": {
+            "success": "Sessão iniciada com sucesso!",
+            "error": "Nome de utilizador ou palavra-passe inválidos"
+        }
+    },
+    "profilePage": {
+        "title": "O meu perfil",
+        "logout": "Terminar sessão",
+        "accountDetails": "Detalhes da conta",
+        "deliveryAddress": "Endereço de entrega",
+        "paymentMethod": "Método de pagamento",
+        "labels": {
+            "username": "Nome de utilizador:",
+            "address": "Endereço:",
+            "card": "Cartão:"
+        },
+        "orderHistory": "Histórico de pedidos",
+        "noOrders": "Nenhum pedido encontrado.",
+        "messages": {
+            "logoutSuccess": "Sessão terminada com sucesso"
+        },
+        "modals": {
+            "logout": {
+                "title": "Terminar sessão",
+                "content": "Tem a certeza que deseja terminar sessão?",
+                "ok": "Sim, terminar",
+                "cancel": "Cancelar"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Catálogo",
+        "cart": "Carrinho",
+        "profile": "Perfil",
+        "notLoggedIn": "Sessão não iniciada"
+    },
+    "checkoutPage": {
+        "title": "Finalizar encomenda",
+        "warning": "* Esta é uma página de demonstração. Os campos são preenchidos automaticamente e não podem ser editados.",
+        "cardTitle": "Dados de entrega e pagamento",
+        "labels": {
+            "ownerName": "Nome do titular",
+            "country": "País",
+            "street": "Rua",
+            "city": "Cidade",
+            "cardNumber": "Número do cartão",
+            "expiry": "Data de validade",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Voltar",
+            "confirmAndPay": "Confirmar e pagar"
+        },
+        "messages": {
+            "success": "Pagamento bem-sucedido! Este é um pedido de teste."
+        }
+    }
+}

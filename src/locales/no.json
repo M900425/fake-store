@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Tilgang begrenset",
+        "subTitle": "Vennligst logg inn for å se din profil og ordrehistorikk.",
+        "cta": "Gå til innlogging"
+    },
+    "categories": {
+        "all": "ALLE",
+        "electronics": "Elektronikk",
+        "jewelery": "Smykker",
+        "men's clothing": "Herreklær",
+        "women's clothing": "Dameklær"
+    },
+    "cartPage": {
+        "title": "Handlekurv",
+        "clearCart": "Tøm kurv",
+        "emptyMessage": "Handlekurven din er tom.",
+        "goToCatalog": "Gå til katalog",
+        "total": "Totalt:",
+        "proceedToCheckout": "Gå til kassen",
+        "loading": "Laster inn data...",
+        "messages": {
+            "itemRemoved": "Vare fjernet fra kurven",
+            "cartCleared": "Kurv tømt",
+            "loginRequired": "Vennligst logg inn på profilen din for å legge inn en bestilling."
+        },
+        "columns": {
+            "product": "Produkt",
+            "price": "Pris",
+            "quantity": "Antall",
+            "total": "Totalt",
+            "action": "Handling"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Fjern vare",
+                "content": "Er du sikker på at du vil fjerne denne varen fra kurven?",
+                "ok": "Ja, fjern",
+                "cancel": "Avbryt"
+            },
+            "clearCart": {
+                "title": "Tøm kurv",
+                "content": "Er du sikker på at du vil fjerne alle varer fra kurven?",
+                "ok": "Ja, tøm kurv",
+                "cancel": "Avbryt"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filtre",
+        "addToCart": "Legg i handlekurv",
+        "loading": "Laster inn data...",
+        "messages": {
+            "addedToCart": "Produkt lagt til i handlekurven!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrer produkter",
+        "resetAll": "Nullstill alt",
+        "apply": "Bruk",
+        "currency": "Valuta",
+        "search": "Søk",
+        "searchPlaceholder": "Skriv produktnavn...",
+        "sortBy": "Sorter etter",
+        "sortOptions": {
+            "default": "Standard",
+            "priceAsc": "Pris ↑",
+            "priceDesc": "Pris ↓",
+            "ratingDesc": "Høyest vurdert"
+        },
+        "priceRange": "Prisområde",
+        "min": "Min",
+        "max": "Maks",
+        "customerRating": "Kundevurdering",
+        "ratingOptions": {
+            "any": "Alle",
+            "fourAndAbove": "4★ og oppover",
+            "threeAndAbove": "3★ og oppover"
+        },
+        "messages": {
+            "applied": "Filtre brukt",
+            "reset": "Filtre nullstilt"
+        }
+    },
+    "productDetail": {
+        "backCart": "Tilbake til handlekurven",
+        "back": "Tilbake til katalog",
+        "reviews": "omtaler",
+        "description": "Beskrivelse",
+        "addToCart": "Legg i handlekurv",
+        "messages": {
+            "addedToCart": "Produkt lagt til i handlekurven!"
+        }
+    },
+    "loginPage": {
+        "title": "Logg inn",
+        "hint": "Tips: bruk <b>mor_2314</b> og <b>83r5^_</b>",
+        "username": "Brukernavn",
+        "password": "Passord",
+        "signIn": "Logg inn",
+        "backToCatalog": "Tilbake til katalog",
+        "validation": {
+            "username": "Vennligst skriv inn brukernavn",
+            "password": "Vennligst skriv inn passord"
+        },
+        "messages": {
+            "success": "Innlogging vellykket!",
+            "error": "Feil brukernavn eller passord"
+        }
+    },
+    "profilePage": {
+        "title": "Min profil",
+        "logout": "Logg ut",
+        "accountDetails": "Kontodetaljer",
+        "deliveryAddress": "Leveringsadresse",
+        "paymentMethod": "Betalingsmetode",
+        "labels": {
+            "username": "Brukernavn:",
+            "address": "Adresse:",
+            "card": "Kort:"
+        },
+        "orderHistory": "Ordrehistorikk",
+        "noOrders": "Ingen ordrer funnet.",
+        "messages": {
+            "logoutSuccess": "Vellykket utlogging"
+        },
+        "modals": {
+            "logout": {
+                "title": "Logg ut",
+                "content": "Er du sikker på at du vil logge ut?",
+                "ok": "Ja, logg ut",
+                "cancel": "Avbryt"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Handlekurv",
+        "profile": "Profil",
+        "notLoggedIn": "Ikke logget inn"
+    },
+    "checkoutPage": {
+        "title": "Fullfør bestilling",
+        "warning": "* Dette er en demonstrasjonsside. Feltene er fylt ut automatisk og kan ikke redigeres.",
+        "cardTitle": "Leverings- og betalingsinformasjon",
+        "labels": {
+            "ownerName": "Kortholders navn",
+            "country": "Land",
+            "street": "Gate",
+            "city": "By",
+            "cardNumber": "Kortnummer",
+            "expiry": "Utløpsdato",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Gå tilbake",
+            "confirmAndPay": "Bekreft og betal"
+        },
+        "messages": {
+            "success": "Betalingen var vellykket! Dette er en testbestilling."
+        }
+    }
+}

@@ -13,6 +13,7 @@ import { type WebStorage } from 'redux-persist';
 import { productApi } from '@/api/productApi';
 import { exchangeApi } from '@/api/exchangeApi';
 import cartReducer from './cartSlice';
+import authReducer from './authSlice';
 
 const storage: WebStorage =
     typeof window !== 'undefined'
@@ -32,12 +33,13 @@ const storage: WebStorage =
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['cart'],
+    whitelist: ['cart', 'auth'],
 };
 const rootReducer = combineReducers({
     [productApi.reducerPath]: productApi.reducer,
     [exchangeApi.reducerPath]: exchangeApi.reducer,
     cart: cartReducer,
+    auth: authReducer,
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Åtkomst begränsad",
+        "subTitle": "Vänligen logga in för att se din profil och orderhistorik.",
+        "cta": "Gå till inloggning"
+    },
+    "categories": {
+        "all": "ALLA",
+        "electronics": "Elektronik",
+        "jewelery": "Smycken",
+        "men's clothing": "Herrkläder",
+        "women's clothing": "Damkläder"
+    },
+    "cartPage": {
+        "title": "Kundvagn",
+        "clearCart": "Töm kundvagn",
+        "emptyMessage": "Din kundvagn är tom.",
+        "goToCatalog": "Gå till katalog",
+        "total": "Totalt:",
+        "proceedToCheckout": "Gå till kassan",
+        "loading": "Laddar data...",
+        "messages": {
+            "itemRemoved": "Vara borttagen från kundvagnen",
+            "cartCleared": "Kundvagnen tömd",
+            "loginRequired": "Vänligen logga in på din profil för att lägga en beställning."
+        },
+        "columns": {
+            "product": "Produkt",
+            "price": "Pris",
+            "quantity": "Antal",
+            "total": "Totalt",
+            "action": "Handling"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Ta bort vara",
+                "content": "Är du säker på att du vill ta bort denna vara från kundvagnen?",
+                "ok": "Ja, ta bort",
+                "cancel": "Avbryt"
+            },
+            "clearCart": {
+                "title": "Töm kundvagn",
+                "content": "Är du säker på att du vill ta bort alla varor från kundvagnen?",
+                "ok": "Ja, töm kundvagn",
+                "cancel": "Avbryt"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filter",
+        "addToCart": "Lägg i kundvagn",
+        "loading": "Laddar data...",
+        "messages": {
+            "addedToCart": "Produkt tillagd i kundvagnen!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrera produkter",
+        "resetAll": "Återställ allt",
+        "apply": "Tillämpa",
+        "currency": "Valuta",
+        "search": "Sök",
+        "searchPlaceholder": "Skriv produktnamn...",
+        "sortBy": "Sortera efter",
+        "sortOptions": {
+            "default": "Standard",
+            "priceAsc": "Pris ↑",
+            "priceDesc": "Pris ↓",
+            "ratingDesc": "Bäst rankad"
+        },
+        "priceRange": "Prisintervall",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Kundbetyg",
+        "ratingOptions": {
+            "any": "Alla",
+            "fourAndAbove": "4★ och uppåt",
+            "threeAndAbove": "3★ och uppåt"
+        },
+        "messages": {
+            "applied": "Filter tillämpade",
+            "reset": "Filter återställda"
+        }
+    },
+    "productDetail": {
+        "backCart": "Tillbaka till varukorgen",
+        "back": "Tillbaka till katalog",
+        "reviews": "recensioner",
+        "description": "Beskrivning",
+        "addToCart": "Lägg i kundvagn",
+        "messages": {
+            "addedToCart": "Produkt tillagd i kundvagnen!"
+        }
+    },
+    "loginPage": {
+        "title": "Logga in",
+        "hint": "Tips: använd <b>mor_2314</b> och <b>83r5^_</b>",
+        "username": "Användarnamn",
+        "password": "Lösenord",
+        "signIn": "Logga in",
+        "backToCatalog": "Tillbaka till katalog",
+        "validation": {
+            "username": "Vänligen ange användarnamn!",
+            "password": "Vänligen ange lösenord!"
+        },
+        "messages": {
+            "success": "Lyckad inloggning!",
+            "error": "Felaktigt användarnamn eller lösenord"
+        }
+    },
+    "profilePage": {
+        "title": "Min profil",
+        "logout": "Logga ut",
+        "accountDetails": "Kontouppgifter",
+        "deliveryAddress": "Leveransadress",
+        "paymentMethod": "Betalningsmetod",
+        "labels": {
+            "username": "Användarnamn:",
+            "address": "Adress:",
+            "card": "Kort:"
+        },
+        "orderHistory": "Orderhistorik",
+        "noOrders": "Inga ordrar hittades.",
+        "messages": {
+            "logoutSuccess": "Utloggad"
+        },
+        "modals": {
+            "logout": {
+                "title": "Logga ut",
+                "content": "Är du säker på att du vill logga ut?",
+                "ok": "Ja, logga ut",
+                "cancel": "Avbryt"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Kundvagn",
+        "profile": "Profil",
+        "notLoggedIn": "Ej inloggad"
+    },
+    "checkoutPage": {
+        "title": "Slutför beställning",
+        "warning": "* Detta är en demosida. Fälten är automatiskt ifyllda och kan inte redigeras.",
+        "cardTitle": "Leverans- och betalningsuppgifter",
+        "labels": {
+            "ownerName": "Kortinnehavare",
+            "country": "Land",
+            "street": "Gata",
+            "city": "Stad",
+            "cardNumber": "Kortnummer",
+            "expiry": "Utgångsdatum",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Gå tillbaka",
+            "confirmAndPay": "Bekräfta och betala"
+        },
+        "messages": {
+            "success": "Betalningen lyckades! Detta är en testbeställning."
+        }
+    }
+}

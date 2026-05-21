@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Omejen dostop",
+        "subTitle": "Prijavite se za ogled profila in zgodovine naročil.",
+        "cta": "Pojdi na prijavo"
+    },
+    "categories": {
+        "all": "VSE",
+        "electronics": "Elektronika",
+        "jewelery": "Nakit",
+        "men's clothing": "Moška oblačila",
+        "women's clothing": "Ženska oblačila"
+    },
+    "cartPage": {
+        "title": "Nakupovalna košarica",
+        "clearCart": "Izprazni košarico",
+        "emptyMessage": "Vaša košarica je prazna.",
+        "goToCatalog": "Pojdi v katalog",
+        "total": "Skupaj:",
+        "proceedToCheckout": "Na blagajno",
+        "loading": "Nalaganje podatkov...",
+        "messages": {
+            "itemRemoved": "Izdelek odstranjen iz košarice",
+            "cartCleared": "Košarica uspešno izpraznjena",
+            "loginRequired": "Prosimo, prijavite se v svoj profil, da oddate naročilo."
+        },
+        "columns": {
+            "product": "Izdelek",
+            "price": "Cena",
+            "quantity": "Količina",
+            "total": "Skupaj",
+            "action": "Dejanje"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Odstrani izdelek",
+                "content": "Ali ste prepričani, da želite odstraniti ta izdelek iz košarice?",
+                "ok": "Da, odstrani",
+                "cancel": "Prekliči"
+            },
+            "clearCart": {
+                "title": "Izprazni košarico",
+                "content": "Ali ste prepričani, da želite odstraniti vse izdelke iz košarice?",
+                "ok": "Da, izprazni",
+                "cancel": "Prekliči"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filtri",
+        "addToCart": "Dodaj v košarico",
+        "loading": "Nalaganje podatkov...",
+        "messages": {
+            "addedToCart": "Izdelek dodan v košarico!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtriraj izdelke",
+        "resetAll": "Ponastavi vse",
+        "apply": "Uporabi",
+        "currency": "Valuta",
+        "search": "Išči",
+        "searchPlaceholder": "Vnesite ime izdelka...",
+        "sortBy": "Razvrsti po",
+        "sortOptions": {
+            "default": "Privzeto",
+            "priceAsc": "Cena ↑",
+            "priceDesc": "Cena ↓",
+            "ratingDesc": "Najbolj ocenjeno"
+        },
+        "priceRange": "Cenovni razpon",
+        "min": "Min",
+        "max": "Maks",
+        "customerRating": "Ocena strank",
+        "ratingOptions": {
+            "any": "Katerakoli",
+            "fourAndAbove": "4★ in več",
+            "threeAndAbove": "3★ in več"
+        },
+        "messages": {
+            "applied": "Filtri uspešno uporabljeni",
+            "reset": "Filtri ponastavljeni"
+        }
+    },
+    "productDetail": {
+        "backCart": "Nazaj v košarico",
+        "back": "Nazaj v katalog",
+        "reviews": "ocen",
+        "description": "Opis",
+        "addToCart": "Dodaj v košarico",
+        "messages": {
+            "addedToCart": "Izdelek dodan v košarico!"
+        }
+    },
+    "loginPage": {
+        "title": "Prijava",
+        "hint": "Namig: uporabite <b>mor_2314</b> in <b>83r5^_</b>",
+        "username": "Uporabniško ime",
+        "password": "Geslo",
+        "signIn": "Prijavi se",
+        "backToCatalog": "Nazaj v katalog",
+        "validation": {
+            "username": "Prosimo, vnesite uporabniško ime!",
+            "password": "Prosimo, vnesite geslo!"
+        },
+        "messages": {
+            "success": "Uspešna prijava!",
+            "error": "Neveljavno uporabniško ime ali geslo"
+        }
+    },
+    "profilePage": {
+        "title": "Moj profil",
+        "logout": "Odjava",
+        "accountDetails": "Podatki o računu",
+        "deliveryAddress": "Naslov za dostavo",
+        "paymentMethod": "Način plačila",
+        "labels": {
+            "username": "Uporabniško ime:",
+            "address": "Naslov:",
+            "card": "Kartica:"
+        },
+        "orderHistory": "Zgodovina naročil",
+        "noOrders": "Naročil ni bilo mogoče najti.",
+        "messages": {
+            "logoutSuccess": "Uspešna odjava"
+        },
+        "modals": {
+            "logout": {
+                "title": "Odjava",
+                "content": "Ali ste prepričani, da se želite odjaviti?",
+                "ok": "Da, odjavi",
+                "cancel": "Prekliči"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Košarica",
+        "profile": "Profil",
+        "notLoggedIn": "Niste prijavljeni"
+    },
+    "checkoutPage": {
+        "title": "Zaključek naročila",
+        "warning": "* To je predstavitvena stran. Polja so samodejno izpolnjena in jih ni mogoče urejati.",
+        "cardTitle": "Podatki o dostavi in plačilu",
+        "labels": {
+            "ownerName": "Ime lastnika",
+            "country": "Država",
+            "street": "Ulica",
+            "city": "Mesto",
+            "cardNumber": "Številka kartice",
+            "expiry": "Datum poteka",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Nazaj",
+            "confirmAndPay": "Potrdi in plačaj"
+        },
+        "messages": {
+            "success": "Plačilo uspešno! To je testno naročilo."
+        }
+    }
+}

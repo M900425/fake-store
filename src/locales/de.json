@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Zugriff beschränkt",
+        "subTitle": "Bitte melden Sie sich an, um Ihr Profil und Ihre Bestellhistorie anzuzeigen.",
+        "cta": "Zur Anmeldung"
+    },
+    "categories": {
+        "all": "ALLE",
+        "electronics": "Elektronik",
+        "jewelery": "Schmuck",
+        "men's clothing": "Herrenbekleidung",
+        "women's clothing": "Damenbekleidung"
+    },
+    "cartPage": {
+        "title": "Warenkorb",
+        "clearCart": "Warenkorb leeren",
+        "emptyMessage": "Ihr Warenkorb ist derzeit leer.",
+        "goToCatalog": "Zum Katalog",
+        "total": "Gesamt:",
+        "proceedToCheckout": "Zur Kasse",
+        "loading": "Daten werden geladen...",
+        "messages": {
+            "itemRemoved": "Artikel aus dem Warenkorb entfernt",
+            "cartCleared": "Warenkorb erfolgreich geleert",
+            "loginRequired": "Bitte melden Sie sich in Ihrem Profil an, um eine Bestellung aufzugeben."
+        },
+        "columns": {
+            "product": "Produkt",
+            "price": "Preis",
+            "quantity": "Menge",
+            "total": "Gesamt",
+            "action": "Aktion"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Artikel entfernen",
+                "content": "Sind Sie sicher, dass Sie diesen Artikel aus Ihrem Warenkorb entfernen möchten?",
+                "ok": "Ja, entfernen",
+                "cancel": "Abbrechen"
+            },
+            "clearCart": {
+                "title": "Warenkorb leeren",
+                "content": "Sind Sie sicher, dass Sie alle Artikel aus Ihrem Warenkorb entfernen möchten?",
+                "ok": "Ja, leeren",
+                "cancel": "Abbrechen"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filter",
+        "addToCart": "In den Warenkorb",
+        "loading": "Daten werden geladen...",
+        "messages": {
+            "addedToCart": "Produkt wurde zum Warenkorb hinzugefügt!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Produkte filtern",
+        "resetAll": "Alles zurücksetzen",
+        "apply": "Anwenden",
+        "currency": "Währung",
+        "search": "Suche",
+        "searchPlaceholder": "Produktname eingeben...",
+        "sortBy": "Sortieren nach",
+        "sortOptions": {
+            "default": "Standard",
+            "priceAsc": "Preis ↑",
+            "priceDesc": "Preis ↓",
+            "ratingDesc": "Am besten bewertet"
+        },
+        "priceRange": "Preisbereich",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Kundenbewertung",
+        "ratingOptions": {
+            "any": "Beliebig",
+            "fourAndAbove": "4★ & höher",
+            "threeAndAbove": "3★ & höher"
+        },
+        "messages": {
+            "applied": "Filter erfolgreich angewendet",
+            "reset": "Filter auf Standard zurückgesetzt"
+        }
+    },
+    "productDetail": {
+        "backCart": "Zurück zum Warenkorb",
+        "back": "Zurück zum Katalog",
+        "reviews": "Bewertungen",
+        "description": "Beschreibung",
+        "addToCart": "In den Warenkorb",
+        "messages": {
+            "addedToCart": "Produkt wurde zum Warenkorb hinzugefügt!"
+        }
+    },
+    "loginPage": {
+        "title": "Anmelden",
+        "hint": "Hinweis: Verwenden Sie <b>mor_2314</b> und <b>83r5^_</b>",
+        "username": "Benutzername",
+        "password": "Passwort",
+        "signIn": "Anmelden",
+        "backToCatalog": "Zurück zum Katalog",
+        "validation": {
+            "username": "Bitte geben Sie Ihren Benutzernamen ein!",
+            "password": "Bitte geben Sie Ihr Passwort ein!"
+        },
+        "messages": {
+            "success": "Erfolgreich angemeldet!",
+            "error": "Ungültiger Benutzername oder Passwort"
+        }
+    },
+    "profilePage": {
+        "title": "Mein Profil",
+        "logout": "Abmelden",
+        "accountDetails": "Kontodetails",
+        "deliveryAddress": "Lieferadresse",
+        "paymentMethod": "Zahlungsmethode",
+        "labels": {
+            "username": "Benutzername:",
+            "address": "Adresse:",
+            "card": "Karte:"
+        },
+        "orderHistory": "Bestellhistorie",
+        "noOrders": "Keine Bestellungen gefunden.",
+        "messages": {
+            "logoutSuccess": "Erfolgreich abgemeldet"
+        },
+        "modals": {
+            "logout": {
+                "title": "Abmelden",
+                "content": "Sind Sie sicher, dass Sie sich abmelden möchten?",
+                "ok": "Ja, abmelden",
+                "cancel": "Abbrechen"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Warenkorb",
+        "profile": "Profil",
+        "notLoggedIn": "Nicht angemeldet"
+    },
+    "checkoutPage": {
+        "title": "Kaufabwicklung",
+        "warning": "* Dies ist eine Demoseite. Die Felder sind automatisch ausgefüllt und können nicht bearbeitet werden.",
+        "cardTitle": "Liefer- und Zahlungsdetails",
+        "labels": {
+            "ownerName": "Name des Karteninhabers",
+            "country": "Land",
+            "street": "Straße",
+            "city": "Stadt",
+            "cardNumber": "Kartennummer",
+            "expiry": "Ablaufdatum",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Zurück",
+            "confirmAndPay": "Bestätigen und bezahlen"
+        },
+        "messages": {
+            "success": "Zahlung erfolgreich! Dies ist eine Testbestellung."
+        }
+    }
+}

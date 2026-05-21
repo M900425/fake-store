@@ -1,8 +1,14 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Card, Row, Col, Typography, Tabs, Button, Rate } from 'antd';
+import { Card, Row, Col, Typography, Tabs, Button, Rate, message } from 'antd';
 import { ShoppingCartOutlined, FilterOutlined } from '@ant-design/icons';
-import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
+import {
+    useParams,
+    useNavigate,
+    useSearchParams,
+    useLocation,
+} from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 import { addToCart } from '@/store/cartSlice';
 import { useGetProductsQuery, useGetCategoriesQuery } from '@/api/productApi';
 import { useGetExchangeRatesQuery } from '@/api/exchangeApi';
@@ -14,9 +20,15 @@ import './CatalogPage.scss';
 
 const { Title, Text } = Typography;
 
+interface LocationState {
+    from?: string;
+}
+
 export default function CatalogPage() {
+    const { t } = useTranslation();
     const { category } = useParams<{ category?: string }>();
     const navigate = useNavigate();
+    const location = useLocation();
     const [searchParams] = useSearchParams();
     const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
     const dispatch = useDispatch();
@@ -43,12 +55,13 @@ export default function CatalogPage() {
     const savedCurrency = localStorage.getItem('appCurrency');
     const currentCurrency =
         searchParams.get('currency') || savedCurrency || 'USD';
-    const currentRate = exchangeRates?.[currentCurrency] || 1;
+    const currentRate = exchangeRates[currentCurrency] || 1;
     const currentSymbol =
         CURRENCIES.find((c) => c.value === currentCurrency)?.symbol || '$';
+    const state = location.state as LocationState | null;
+    const fromPage = state?.from || 'catalog';
     const filteredProducts = useMemo(() => {
         if (!products || isProductDetail) return [];
-
         const search = (searchParams.get('search') || '').toLowerCase();
         const sort = searchParams.get('sort') || 'default';
         const minPrice = Number(searchParams.get('minPrice')) || 0;
@@ -88,8 +101,9 @@ export default function CatalogPage() {
     }, [products, searchParams, currentRate, isProductDetail]);
 
     if (isProductsLoading || isRatesLoading) {
-        return <LoadingSpinner tip="Loading data..." />;
+        return <LoadingSpinner tip={t('catalogPage.loading')} />;
     }
+
     if (isProductDetail && products) {
         const product = products.find((p) => p.id === Number(category));
 
@@ -100,9 +114,16 @@ export default function CatalogPage() {
                         product={product}
                         currentRate={currentRate}
                         currentSymbol={currentSymbol}
-                        onBack={() =>
-                            navigate(`/catalog/all?${searchParams.toString()}`)
-                        }
+                        fromPage={fromPage}
+                        onBack={() => {
+                            if (fromPage === 'cart') {
+                                navigate('/cart');
+                            } else {
+                                navigate(
+                                    `/catalog/all?${searchParams.toString()}`,
+                                );
+                            }
+                        }}
                         onAddToCart={() => dispatch(addToCart(product))}
                     />
                 </div>
@@ -111,10 +132,10 @@ export default function CatalogPage() {
     }
 
     const tabItems = [
-        { key: 'all', label: 'ALL' },
+        { key: 'all', label: t('categories.all') },
         ...(categories?.map((cat) => ({
             key: cat,
-            label: cat.toUpperCase(),
+            label: t(`categories.${cat}`),
         })) || []),
     ];
     const handleTabChange = (key: string) => {
@@ -127,7 +148,7 @@ export default function CatalogPage() {
                 icon={<FilterOutlined />}
                 onClick={() => setIsFilterDrawerOpen(true)}
             >
-                Filters
+                {t('catalogPage.filters')}
             </Button>
         ),
     };
@@ -137,7 +158,7 @@ export default function CatalogPage() {
             <div className="header">
                 <div className="catalog-header">
                     <Title level={2} className="no-margin">
-                        Catalog
+                        {t('catalogPage.title')}
                     </Title>
                 </div>
                 <Tabs
@@ -162,6 +183,7 @@ export default function CatalogPage() {
                                 onClick={() =>
                                     navigate(
                                         `/catalog/${product.id}?${searchParams.toString()}`,
+                                        { state: { from: 'catalog' } },
                                     )
                                 }
                                 cover={
@@ -181,9 +203,14 @@ export default function CatalogPage() {
                                         onClick={(e) => {
                                             e.stopPropagation();
                                             dispatch(addToCart(product));
+                                            message.success(
+                                                t(
+                                                    'catalogPage.messages.addedToCart',
+                                                ),
+                                            );
                                         }}
                                     >
-                                        Add to Cart
+                                        {t('catalogPage.addToCart')}
                                     </Button>,
                                 ]}
                             >
@@ -215,7 +242,9 @@ export default function CatalogPage() {
                                                     type="secondary"
                                                     className="rating-count"
                                                 >
-                                                    ({product.rating.count})
+                                                    ({product.rating.count}{' '}
+                                                    {t('productDetail.reviews')}
+                                                    )
                                                 </Text>
                                             </div>
                                         </div>

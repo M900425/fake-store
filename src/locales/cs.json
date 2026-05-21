@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Omezený přístup",
+        "subTitle": "Prosím, přihlaste se pro zobrazení profilu a historie objednávek.",
+        "cta": "Přejít na přihlášení"
+    },
+    "categories": {
+        "all": "VŠE",
+        "electronics": "Elektronika",
+        "jewelery": "Šperky",
+        "men's clothing": "Pánské oblečení",
+        "women's clothing": "Dámské oblečení"
+    },
+    "cartPage": {
+        "title": "Nákupní košík",
+        "clearCart": "Vyprázdnit košík",
+        "emptyMessage": "Váš košík je momentálně prázdný.",
+        "goToCatalog": "Přejít do katalogu",
+        "total": "Celkem:",
+        "proceedToCheckout": "Pokračovat k pokladně",
+        "loading": "Načítání dat...",
+        "messages": {
+            "itemRemoved": "Položka odstraněna z košíku",
+            "cartCleared": "Košík úspěšně vyprázdněn",
+            "loginRequired": "Prosím, přihlaste se ke svému profilu pro vytvoření objednávky."
+        },
+        "columns": {
+            "product": "Produkt",
+            "price": "Cena",
+            "quantity": "Množství",
+            "total": "Celkem",
+            "action": "Akce"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Odstranit položku",
+                "content": "Opravdu chcete odstranit tuto položku z košíku?",
+                "ok": "Ano, odstranit",
+                "cancel": "Zrušit"
+            },
+            "clearCart": {
+                "title": "Vyprázdnit košík",
+                "content": "Opravdu chcete odstranit všechny položky z košíku?",
+                "ok": "Ano, vyprázdnit",
+                "cancel": "Zrušit"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filtry",
+        "addToCart": "Přidat do košíku",
+        "loading": "Načítání dat...",
+        "messages": {
+            "addedToCart": "Produkt přidán do košíku!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrovat produkty",
+        "resetAll": "Resetovat vše",
+        "apply": "Použít",
+        "currency": "Měna",
+        "search": "Hledat",
+        "searchPlaceholder": "Zadejte název produktu...",
+        "sortBy": "Seřadit podle",
+        "sortOptions": {
+            "default": "Výchozí",
+            "priceAsc": "Cena ↑",
+            "priceDesc": "Cena ↓",
+            "ratingDesc": "Nejlépe hodnocené"
+        },
+        "priceRange": "Cenové rozpětí",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Hodnocení zákazníků",
+        "ratingOptions": {
+            "any": "Jakékoli",
+            "fourAndAbove": "4★ a více",
+            "threeAndAbove": "3★ a více"
+        },
+        "messages": {
+            "applied": "Filtry úspěšně aplikovány",
+            "reset": "Filtry resetovány na výchozí"
+        }
+    },
+    "productDetail": {
+        "backCart": "Zpět do košíku",
+        "back": "Zpět do katalogu",
+        "reviews": "recenzí",
+        "description": "Popis",
+        "addToCart": "Přidat do košíku",
+        "messages": {
+            "addedToCart": "Produkt přidán do košíku!"
+        }
+    },
+    "loginPage": {
+        "title": "Přihlášení",
+        "hint": "Tip: použijte <b>mor_2314</b> a <b>83r5^_</b>",
+        "username": "Uživatelské jméno",
+        "password": "Heslo",
+        "signIn": "Přihlásit se",
+        "backToCatalog": "Zpět do katalogu",
+        "validation": {
+            "username": "Prosím zadejte uživatelské jméno!",
+            "password": "Prosím zadejte heslo!"
+        },
+        "messages": {
+            "success": "Úspěšné přihlášení!",
+            "error": "Neplatné uživatelské jméno nebo heslo"
+        }
+    },
+    "profilePage": {
+        "title": "Můj profil",
+        "logout": "Odhlásit se",
+        "accountDetails": "Údaje o účtu",
+        "deliveryAddress": "Doručovací adresa",
+        "paymentMethod": "Platební metoda",
+        "labels": {
+            "username": "Uživatelské jméno:",
+            "address": "Adresa:",
+            "card": "Karta:"
+        },
+        "orderHistory": "Historie objednávek",
+        "noOrders": "Nebyly nalezeny žádné objednávky.",
+        "messages": {
+            "logoutSuccess": "Úspěšné odhlášení"
+        },
+        "modals": {
+            "logout": {
+                "title": "Odhlásit se",
+                "content": "Opravdu se chcete odhlásit ze svého účtu?",
+                "ok": "Ano, odhlásit",
+                "cancel": "Zrušit"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Košík",
+        "profile": "Profil",
+        "notLoggedIn": "Nepřihlášen"
+    },
+    "checkoutPage": {
+        "title": "Dokončení objednávky",
+        "warning": "* Toto je demo stránka. Pole jsou vyplněna automaticky a nelze je upravovat.",
+        "cardTitle": "Údaje o doručení a platbě",
+        "labels": {
+            "ownerName": "Jméno držitele",
+            "country": "Země",
+            "street": "Ulice",
+            "city": "Město",
+            "cardNumber": "Číslo karty",
+            "expiry": "Datum expirace",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Zpět",
+            "confirmAndPay": "Potvrdit a zaplatit"
+        },
+        "messages": {
+            "success": "Platba proběhla úspěšně! Toto je testovací objednávka."
+        }
+    }
+}

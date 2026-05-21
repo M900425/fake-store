@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Zougrëff verweigert",
+        "subTitle": "W.e.g. aloggen fir Äre Profil an Är Bestellungsgeschicht ze gesinn.",
+        "cta": "Aloggen"
+    },
+    "categories": {
+        "all": "ALL",
+        "electronics": "Elektronik",
+        "jewelery": "Bijouen",
+        "men's clothing": "Härekledung",
+        "women's clothing": "Dammekledung"
+    },
+    "cartPage": {
+        "title": "Akafswon",
+        "clearCart": "Akafswon eidel maachen",
+        "emptyMessage": "Ären Akafswon ass am Moment eidel.",
+        "goToCatalog": "Zréck an de Katalog",
+        "total": "Total:",
+        "proceedToCheckout": "Gitt zur Keess",
+        "loading": "Daten gi gelueden...",
+        "messages": {
+            "itemRemoved": "Artikel aus dem Akafswon geläscht",
+            "cartCleared": "Akafswon erfollegräich eidel gemaach",
+            "loginRequired": "W.e.g. loggt Iech an fir eng Bestellung opzeginn."
+        },
+        "columns": {
+            "product": "Produkt",
+            "price": "Präis",
+            "quantity": "Quantitéit",
+            "total": "Total",
+            "action": "Aktioun"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Artikel läschen",
+                "content": "Sidd Dir sécher datt Dir dësen Artikel aus Ärem Akafswon läsche wëllt?",
+                "ok": "Jo, läschen",
+                "cancel": "Ofbriechen"
+            },
+            "clearCart": {
+                "title": "Akafswon eidel maachen",
+                "content": "Sidd Dir sécher datt Dir all d'Artikelen aus Ärem Akafswon läsche wëllt?",
+                "ok": "Jo, eidel maachen",
+                "cancel": "Ofbriechen"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filteren",
+        "addToCart": "An den Akafswon",
+        "loading": "Daten gi gelueden...",
+        "messages": {
+            "addedToCart": "Produkt an den Akafswon geluecht!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Produkter filteren",
+        "resetAll": "Alles zrécksetzen",
+        "apply": "Uwenden",
+        "currency": "Währung",
+        "search": "Sichen",
+        "searchPlaceholder": "Produktnumm aginn...",
+        "sortBy": "Zortéieren no",
+        "sortOptions": {
+            "default": "Standard",
+            "priceAsc": "Präis ↑",
+            "priceDesc": "Präis ↓",
+            "ratingDesc": "Bescht bewäert"
+        },
+        "priceRange": "Präisklass",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Konnebewäertung",
+        "ratingOptions": {
+            "any": "All",
+            "fourAndAbove": "4★ an doriwwer",
+            "threeAndAbove": "3★ an doriwwer"
+        },
+        "messages": {
+            "applied": "Filter erfollegräich ugewannt",
+            "reset": "Filter op Standard zréckgesat"
+        }
+    },
+    "productDetail": {
+        "backCart": "Zréck an den Akafswon",
+        "back": "Zréck an de Katalog",
+        "reviews": "Bewäertungen",
+        "description": "Beschreiwung",
+        "addToCart": "An den Akafswon",
+        "messages": {
+            "addedToCart": "Produkt an den Akafswon geluecht!"
+        }
+    },
+    "loginPage": {
+        "title": "Aloggen",
+        "hint": "Hiwäis: benotzt <b>mor_2314</b> an <b>83r5^_</b>",
+        "username": "Benotzernumm",
+        "password": "Passwuert",
+        "signIn": "Aloggen",
+        "backToCatalog": "Zréck an de Katalog",
+        "validation": {
+            "username": "W.e.g. gitt Äre Benotzernumm an!",
+            "password": "W.e.g. gitt Äert Passwuert an!"
+        },
+        "messages": {
+            "success": "Erfollegräich ageloggt!",
+            "error": "Ongülteg Benotzernumm oder Passwuert"
+        }
+    },
+    "profilePage": {
+        "title": "Mäi Profil",
+        "logout": "Ausloggen",
+        "accountDetails": "Kontdetailer",
+        "deliveryAddress": "Liwweradress",
+        "paymentMethod": "Bezuelmethod",
+        "labels": {
+            "username": "Benotzernumm:",
+            "address": "Adress:",
+            "card": "Kaart:"
+        },
+        "orderHistory": "Bestellungsgeschicht",
+        "noOrders": "Keng Bestellunge fonnt.",
+        "messages": {
+            "logoutSuccess": "Erfollegräich ausgeloggt"
+        },
+        "modals": {
+            "logout": {
+                "title": "Ausloggen",
+                "content": "Sidd Dir sécher datt Dir Iech auslogge wëllt?",
+                "ok": "Jo, ausloggen",
+                "cancel": "Ofbriechen"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Akafswon",
+        "profile": "Profil",
+        "notLoggedIn": "Net ageloggt"
+    },
+    "checkoutPage": {
+        "title": "Keess",
+        "warning": "* Dëst ass eng Demosäit. D'Fëlder sinn automatesch ausgefëllt a kënnen net geännert ginn.",
+        "cardTitle": "Liwwer- a Bezueldetailer",
+        "labels": {
+            "ownerName": "Numm vum Kaartebesëtzer",
+            "country": "Land",
+            "street": "Strooss",
+            "city": "Stad",
+            "cardNumber": "Kaartenummer",
+            "expiry": "Oflafdatum",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Zréck",
+            "confirmAndPay": "Bestätegen a bezuelen"
+        },
+        "messages": {
+            "success": "Bezuelung erfollegräich! Dëst ass eng Testbestellung."
+        }
+    }
+}

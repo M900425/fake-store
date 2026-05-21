@@ -1,1 +1,164 @@
-{}
+{
+    "loginPrompt": {
+        "title": "Access Restricted",
+        "subTitle": "Please log in to view your profile and order history.",
+        "cta": "Go to Login"
+    },
+    "categories": {
+        "all": "ALL",
+        "electronics": "Electronics",
+        "jewelery": "Jewelery",
+        "men's clothing": "Men's Clothing",
+        "women's clothing": "Women's Clothing"
+    },
+    "cartPage": {
+        "title": "Shopping Cart",
+        "clearCart": "Clear Cart",
+        "emptyMessage": "Your cart is currently empty.",
+        "goToCatalog": "Go to Catalog",
+        "total": "Total:",
+        "proceedToCheckout": "Proceed to Checkout",
+        "loading": "Loading data...",
+        "messages": {
+            "itemRemoved": "Item removed from cart",
+            "cartCleared": "Cart cleared successfully",
+            "loginRequired": "Please log in to your profile to place an order."
+        },
+        "columns": {
+            "product": "Product",
+            "price": "Price",
+            "quantity": "Quantity",
+            "total": "Total",
+            "action": "Action"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Remove Item",
+                "content": "Are you sure you want to remove this item from your cart?",
+                "ok": "Yes, remove",
+                "cancel": "Cancel"
+            },
+            "clearCart": {
+                "title": "Clear Cart",
+                "content": "Are you sure you want to remove all items from your cart?",
+                "ok": "Yes, clear cart",
+                "cancel": "Cancel"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Catalog",
+        "filters": "Filters",
+        "addToCart": "Add to Cart",
+        "loading": "Loading data...",
+        "messages": {
+            "addedToCart": "Product added to cart!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filter Products",
+        "resetAll": "Reset All",
+        "apply": "Apply",
+        "currency": "Currency",
+        "search": "Search",
+        "searchPlaceholder": "Type product name...",
+        "sortBy": "Sort By",
+        "sortOptions": {
+            "default": "Default",
+            "priceAsc": "Price ↑",
+            "priceDesc": "Price ↓",
+            "ratingDesc": "Top Rated"
+        },
+        "priceRange": "Price Range",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Customer Rating",
+        "ratingOptions": {
+            "any": "Any",
+            "fourAndAbove": "4★ & above",
+            "threeAndAbove": "3★ & above"
+        },
+        "messages": {
+            "applied": "Filters applied successfully",
+            "reset": "Filters reset to default"
+        }
+    },
+    "productDetail": {
+        "backCart": "Back to cart",
+        "back": "Back to catalog",
+        "reviews": "reviews",
+        "description": "Description",
+        "addToCart": "Add to Cart",
+        "messages": {
+            "addedToCart": "Product added to cart!"
+        }
+    },
+    "loginPage": {
+        "title": "Login",
+        "hint": "Hint: use <b>mor_2314</b> and <b>83r5^_</b>",
+        "username": "Username",
+        "password": "Password",
+        "signIn": "Sign In",
+        "backToCatalog": "Back to Catalog",
+        "validation": {
+            "username": "Please input your username!",
+            "password": "Please input your password!"
+        },
+        "messages": {
+            "success": "Successfully logged in!",
+            "error": "Invalid username or password"
+        }
+    },
+    "profilePage": {
+        "title": "My Profile",
+        "logout": "Log Out",
+        "accountDetails": "Account Details",
+        "deliveryAddress": "Delivery Address",
+        "paymentMethod": "Payment Method",
+        "labels": {
+            "username": "Username:",
+            "address": "Address:",
+            "card": "Card:"
+        },
+        "orderHistory": "Order History",
+        "noOrders": "No orders found.",
+        "messages": {
+            "logoutSuccess": "Successfully logged out"
+        },
+        "modals": {
+            "logout": {
+                "title": "Log Out",
+                "content": "Are you sure you want to log out of your account?",
+                "ok": "Yes, log out",
+                "cancel": "Cancel"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Catalog",
+        "cart": "Cart",
+        "profile": "Profile",
+        "notLoggedIn": "Not logged in"
+    },
+    "checkoutPage": {
+        "title": "Checkout",
+        "warning": "* This is a demo page. Fields are auto-filled and cannot be edited.",
+        "cardTitle": "Delivery and payment details",
+        "labels": {
+            "ownerName": "Cardholder name",
+            "country": "Country",
+            "street": "Street",
+            "city": "City",
+            "cardNumber": "Card number",
+            "expiry": "Expiry date",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Go back",
+            "confirmAndPay": "Confirm and pay"
+        },
+        "messages": {
+            "success": "Payment successful! This is a test order."
+        }
+    }
+}

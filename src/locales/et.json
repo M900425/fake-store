@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Juurdepääs piiratud",
+        "subTitle": "Palun logige sisse, et vaadata oma profiili ja tellimuste ajalugu.",
+        "cta": "Mine sisselogimisele"
+    },
+    "categories": {
+        "all": "KÕIK",
+        "electronics": "Elektroonika",
+        "jewelery": "Ehted",
+        "men's clothing": "Meeste riided",
+        "women's clothing": "Naiste riided"
+    },
+    "cartPage": {
+        "title": "Ostukorv",
+        "clearCart": "Tühjenda korv",
+        "emptyMessage": "Teie ostukorv on praegu tühi.",
+        "goToCatalog": "Mine kataloogi",
+        "total": "Kokku:",
+        "proceedToCheckout": "Mine kassasse",
+        "loading": "Andmete laadimine...",
+        "messages": {
+            "itemRemoved": "Ese eemaldatud korvist",
+            "cartCleared": "Korv tühjendatud",
+            "loginRequired": "Palun logige sisse, et tellimust esitada."
+        },
+        "columns": {
+            "product": "Toode",
+            "price": "Hind",
+            "quantity": "Kogus",
+            "total": "Kokku",
+            "action": "Tegevus"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Eemalda toode",
+                "content": "Kas olete kindel, et soovite selle toote korvist eemaldada?",
+                "ok": "Jah, eemalda",
+                "cancel": "Tühista"
+            },
+            "clearCart": {
+                "title": "Tühjenda korv",
+                "content": "Kas olete kindel, et soovite kõik tooted korvist eemaldada?",
+                "ok": "Jah, tühjenda",
+                "cancel": "Tühista"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Kataloog",
+        "filters": "Filtrid",
+        "addToCart": "Lisa korvi",
+        "loading": "Andmete laadimine...",
+        "messages": {
+            "addedToCart": "Toode lisatud korvi!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtreeri tooteid",
+        "resetAll": "Lähtesta kõik",
+        "apply": "Rakenda",
+        "currency": "Valuuta",
+        "search": "Otsi",
+        "searchPlaceholder": "Sisesta toote nimi...",
+        "sortBy": "Sorteeri",
+        "sortOptions": {
+            "default": "Vaikimisi",
+            "priceAsc": "Hind ↑",
+            "priceDesc": "Hind ↓",
+            "ratingDesc": "Kõrgeim hinnang"
+        },
+        "priceRange": "Hinnavahemik",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Klientide hinnang",
+        "ratingOptions": {
+            "any": "Kõik",
+            "fourAndAbove": "4★ ja rohkem",
+            "threeAndAbove": "3★ ja rohkem"
+        },
+        "messages": {
+            "applied": "Filtrid rakendatud",
+            "reset": "Filtrid lähtestatud"
+        }
+    },
+    "productDetail": {
+        "backCart": "Tagasi ostukorvi",
+        "back": "Tagasi kataloogi",
+        "reviews": "arvustust",
+        "description": "Kirjeldus",
+        "addToCart": "Lisa korvi",
+        "messages": {
+            "addedToCart": "Toode lisatud korvi!"
+        }
+    },
+    "loginPage": {
+        "title": "Logi sisse",
+        "hint": "Vihje: kasuta <b>mor_2314</b> ja <b>83r5^_</b>",
+        "username": "Kasutajanimi",
+        "password": "Parool",
+        "signIn": "Logi sisse",
+        "backToCatalog": "Tagasi kataloogi",
+        "validation": {
+            "username": "Palun sisestage kasutajanimi!",
+            "password": "Palun sisestage parool!"
+        },
+        "messages": {
+            "success": "Sisselogimine õnnestus!",
+            "error": "Vale kasutajanimi või parool"
+        }
+    },
+    "profilePage": {
+        "title": "Minu profiil",
+        "logout": "Logi välja",
+        "accountDetails": "Konto andmed",
+        "deliveryAddress": "Tarneaadress",
+        "paymentMethod": "Makseviis",
+        "labels": {
+            "username": "Kasutajanimi:",
+            "address": "Aadress:",
+            "card": "Kaart:"
+        },
+        "orderHistory": "Tellimuste ajalugu",
+        "noOrders": "Tellimusi ei leitud.",
+        "messages": {
+            "logoutSuccess": "Väljalogimine õnnestus"
+        },
+        "modals": {
+            "logout": {
+                "title": "Logi välja",
+                "content": "Kas olete kindel, et soovite välja logida?",
+                "ok": "Jah, logi välja",
+                "cancel": "Tühista"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Kataloog",
+        "cart": "Ostukorv",
+        "profile": "Profiil",
+        "notLoggedIn": "Pole sisse logitud"
+    },
+    "checkoutPage": {
+        "title": "Tellimuse vormistamine",
+        "warning": "* See on demo-leht. Väljad on täidetud automaatselt ja neid ei saa muuta.",
+        "cardTitle": "Tarne- ja makseandmed",
+        "labels": {
+            "ownerName": "Omaniku nimi",
+            "country": "Riik",
+            "street": "Tänav",
+            "city": "Linn",
+            "cardNumber": "Kaardi number",
+            "expiry": "Aegumiskuupäev",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Tagasi",
+            "confirmAndPay": "Kinnita ja maksa"
+        },
+        "messages": {
+            "success": "Makse õnnestus! See on testtellimus."
+        }
+    }
+}

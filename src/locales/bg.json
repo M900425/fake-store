@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Ограничен достъп",
+        "subTitle": "Моля, влезте в профила си, за да видите историята на поръчките.",
+        "cta": "Към вход"
+    },
+    "categories": {
+        "all": "ВСИЧКИ",
+        "electronics": "Електроника",
+        "jewelery": "Бижута",
+        "men's clothing": "Мъжки дрехи",
+        "women's clothing": "Дамски дрехи"
+    },
+    "cartPage": {
+        "title": "Количка",
+        "clearCart": "Изпразни количката",
+        "emptyMessage": "Количката ви е празна.",
+        "goToCatalog": "Към каталога",
+        "total": "Общо:",
+        "proceedToCheckout": "Към плащане",
+        "loading": "Зареждане...",
+        "messages": {
+            "itemRemoved": "Продуктът е премахнат",
+            "cartCleared": "Количката е изпразнена",
+            "loginRequired": "Моля, влезте в профила си, за да оформите поръчка."
+        },
+        "columns": {
+            "product": "Продукт",
+            "price": "Цена",
+            "quantity": "Количество",
+            "total": "Общо",
+            "action": "Действие"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Премахни продукт",
+                "content": "Сигурни ли сте, че искате да премахнете този продукт?",
+                "ok": "Да, премахни",
+                "cancel": "Отказ"
+            },
+            "clearCart": {
+                "title": "Изпразни количката",
+                "content": "Сигурни ли сте, че искате да изпразните количката?",
+                "ok": "Да, изпразни",
+                "cancel": "Отказ"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Каталог",
+        "filters": "Филтри",
+        "addToCart": "Добави в количката",
+        "loading": "Зареждане...",
+        "messages": {
+            "addedToCart": "Продуктът е добавен!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Филтриране",
+        "resetAll": "Изчисти всички",
+        "apply": "Приложи",
+        "currency": "Валута",
+        "search": "Търси",
+        "searchPlaceholder": "Въведете име...",
+        "sortBy": "Сортирай",
+        "sortOptions": {
+            "default": "По подразбиране",
+            "priceAsc": "Цена ↑",
+            "priceDesc": "Цена ↓",
+            "ratingDesc": "Най-висока оценка"
+        },
+        "priceRange": "Цена",
+        "min": "Мин",
+        "max": "Макс",
+        "customerRating": "Оценка",
+        "ratingOptions": {
+            "any": "Всяка",
+            "fourAndAbove": "4★ и нагоре",
+            "threeAndAbove": "3★ и нагоре"
+        },
+        "messages": {
+            "applied": "Филтрите са приложени",
+            "reset": "Филтрите са изчистени"
+        }
+    },
+    "productDetail": {
+        "backCart": "Назад към количката",
+        "back": "Назад към каталога",
+        "reviews": "ревюта",
+        "description": "Описание",
+        "addToCart": "Добави в количката",
+        "messages": {
+            "addedToCart": "Продуктът е добавен!"
+        }
+    },
+    "loginPage": {
+        "title": "Вход",
+        "hint": "Съвет: ползвайте <b>mor_2314</b> и <b>83r5^_</b>",
+        "username": "Потребител",
+        "password": "Парола",
+        "signIn": "Вход",
+        "backToCatalog": "Назад към каталога",
+        "validation": {
+            "username": "Въведете потребител!",
+            "password": "Въведете парола!"
+        },
+        "messages": {
+            "success": "Успешно влизане!",
+            "error": "Грешен потребител или парола"
+        }
+    },
+    "profilePage": {
+        "title": "Моят профил",
+        "logout": "Изход",
+        "accountDetails": "Детайли",
+        "deliveryAddress": "Адрес за доставка",
+        "paymentMethod": "Начин на плащане",
+        "labels": {
+            "username": "Потребител:",
+            "address": "Адрес:",
+            "card": "Карта:"
+        },
+        "orderHistory": "История",
+        "noOrders": "Няма поръчки.",
+        "messages": {
+            "logoutSuccess": "Успешен изход"
+        },
+        "modals": {
+            "logout": {
+                "title": "Изход",
+                "content": "Сигурни ли сте, че искате да излезете?",
+                "ok": "Да, изход",
+                "cancel": "Отказ"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Каталог",
+        "cart": "Количка",
+        "profile": "Профил",
+        "notLoggedIn": "Не сте влезли"
+    },
+    "checkoutPage": {
+        "title": "Финализиране на поръчката",
+        "warning": "* Това е демо страница. Полетата са попълнени автоматично и не могат да се редактират.",
+        "cardTitle": "Данни за доставка и плащане",
+        "labels": {
+            "ownerName": "Име на притежателя",
+            "country": "Държава",
+            "street": "Улица",
+            "city": "Град",
+            "cardNumber": "Номер на карта",
+            "expiry": "Дата на изтичане",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Назад",
+            "confirmAndPay": "Потвърждаване и плащане"
+        },
+        "messages": {
+            "success": "Плащането е успешно! Това е тестова поръчка."
+        }
+    }
+}

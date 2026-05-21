@@ -1,13 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-
-export interface ExchangeRatesResponse {
-    rates: Record<string, number>;
-    base_code: string;
-}
+import { type ExchangeRatesResponse } from '@/types/exchange';
 
 export const exchangeApi = createApi({
     reducerPath: 'exchangeApi',
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://open.er-api.com/v6/' }),
+    baseQuery: fetchBaseQuery({
+        baseUrl: import.meta.env.VITE_EXCHANGE_API_URL,
+    }),
     endpoints: (builder) => ({
         getExchangeRates: builder.query<ExchangeRatesResponse, void>({
             query: () => 'latest/USD',
