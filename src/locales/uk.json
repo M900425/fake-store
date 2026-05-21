@@ -1,1 +1,164 @@
-{}
+{
+    "loginPrompt": {
+        "title": "Доступ обмежено",
+        "subTitle": "Будь ласка, увійдіть, щоб переглянути свій профіль та історію замовлень.",
+        "cta": "Увійти"
+    },
+    "categories": {
+        "all": "УСЕ",
+        "electronics": "Електроніка",
+        "jewelery": "Ювелірні вироби",
+        "men's clothing": "Чоловічий одяг",
+        "women's clothing": "Жіночий одяг"
+    },
+    "cartPage": {
+        "title": "Кошик",
+        "clearCart": "Очистити кошик",
+        "emptyMessage": "Ваш кошик наразі порожній.",
+        "goToCatalog": "Перейти до каталогу",
+        "total": "Разом:",
+        "proceedToCheckout": "Оформити замовлення",
+        "loading": "Завантаження даних...",
+        "messages": {
+            "itemRemoved": "Товар видалено з кошика",
+            "cartCleared": "Кошик успішно очищено",
+            "loginRequired": "Будь ласка, увійдіть у свій профіль, щоб оформити замовлення."
+        },
+        "columns": {
+            "product": "Товар",
+            "price": "Ціна",
+            "quantity": "Кількість",
+            "total": "Сума",
+            "action": "Дія"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Видалити товар",
+                "content": "Ви впевнені, що хочете видалити цей товар із кошика?",
+                "ok": "Так, видалити",
+                "cancel": "Скасувати"
+            },
+            "clearCart": {
+                "title": "Очистити кошик",
+                "content": "Ви впевнені, що хочете видалити всі товари з кошика?",
+                "ok": "Так, очистити",
+                "cancel": "Скасувати"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Каталог",
+        "filters": "Фільтри",
+        "addToCart": "До кошика",
+        "loading": "Завантаження даних...",
+        "messages": {
+            "addedToCart": "Товар додано до кошика!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Фільтр товарів",
+        "resetAll": "Скинути все",
+        "apply": "Застосувати",
+        "currency": "Валюта",
+        "search": "Пошук",
+        "searchPlaceholder": "Введіть назву товару...",
+        "sortBy": "Сортувати за",
+        "sortOptions": {
+            "default": "За замовчуванням",
+            "priceAsc": "Ціна ↑",
+            "priceDesc": "Ціна ↓",
+            "ratingDesc": "Найкращий рейтинг"
+        },
+        "priceRange": "Ціновий діапазон",
+        "min": "Мін",
+        "max": "Макс",
+        "customerRating": "Рейтинг клієнтів",
+        "ratingOptions": {
+            "any": "Будь-який",
+            "fourAndAbove": "4★ і вище",
+            "threeAndAbove": "3★ і вище"
+        },
+        "messages": {
+            "applied": "Фільтри успішно застосовано",
+            "reset": "Фільтри скинуто за замовчуванням"
+        }
+    },
+    "productDetail": {
+        "backCart": "Назад до кошика",
+        "back": "Назад до каталогу",
+        "reviews": "відгуків",
+        "description": "Опис",
+        "addToCart": "До кошика",
+        "messages": {
+            "addedToCart": "Товар додано до кошика!"
+        }
+    },
+    "loginPage": {
+        "title": "Вхід",
+        "hint": "Підказка: використовуйте <b>mor_2314</b> та <b>83r5^_</b>",
+        "username": "Логін",
+        "password": "Пароль",
+        "signIn": "Увійти",
+        "backToCatalog": "Назад до каталогу",
+        "validation": {
+            "username": "Будь ласка, введіть логін!",
+            "password": "Будь ласка, введіть пароль!"
+        },
+        "messages": {
+            "success": "Успішний вхід!",
+            "error": "Невірний логін або пароль"
+        }
+    },
+    "profilePage": {
+        "title": "Мій профіль",
+        "logout": "Вийти",
+        "accountDetails": "Дані акаунта",
+        "deliveryAddress": "Адреса доставки",
+        "paymentMethod": "Спосіб оплати",
+        "labels": {
+            "username": "Логін:",
+            "address": "Адреса:",
+            "card": "Карта:"
+        },
+        "orderHistory": "Історія замовлень",
+        "noOrders": "Замовлень не знайдено.",
+        "messages": {
+            "logoutSuccess": "Ви успішно вийшли"
+        },
+        "modals": {
+            "logout": {
+                "title": "Вихід",
+                "content": "Ви впевнені, що хочете вийти зі свого акаунта?",
+                "ok": "Так, вийти",
+                "cancel": "Скасувати"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Каталог",
+        "cart": "Кошик",
+        "profile": "Профіль",
+        "notLoggedIn": "Ви не ввійшли"
+    },
+    "checkoutPage": {
+        "title": "Оформлення замовлення",
+        "warning": "* Це демонстраційна сторінка. Поля заповнені автоматично і недоступні для редагування.",
+        "cardTitle": "Дані доставки та оплати",
+        "labels": {
+            "ownerName": "Ім'я власника",
+            "country": "Країна",
+            "street": "Вулиця",
+            "city": "Місто",
+            "cardNumber": "Номер картки",
+            "expiry": "Термін дії",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Повернутися",
+            "confirmAndPay": "Підтвердити та оплатити"
+        },
+        "messages": {
+            "success": "Оплата успішна! Це тестове замовлення."
+        }
+    }
+}

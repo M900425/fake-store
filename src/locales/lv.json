@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Piekļuve ierobežota",
+        "subTitle": "Lūdzu, piesakieties, lai skatītu savu profilu un pasūtījumu vēsturi.",
+        "cta": "Doties uz pieteikšanos"
+    },
+    "categories": {
+        "all": "VISAS",
+        "electronics": "Elektronika",
+        "jewelery": "Rotaslietas",
+        "men's clothing": "Vīriešu apģērbi",
+        "women's clothing": "Sieviešu apģērbi"
+    },
+    "cartPage": {
+        "title": "Iepirkumu grozs",
+        "clearCart": "Iztīrīt grozu",
+        "emptyMessage": "Jūsu grozs pašlaik ir tukšs.",
+        "goToCatalog": "Doties uz katalogu",
+        "total": "Kopā:",
+        "proceedToCheckout": "Doties uz apmaksu",
+        "loading": "Ielādē datus...",
+        "messages": {
+            "itemRemoved": "Prece noņemta no groza",
+            "cartCleared": "Grozs veiksmīgi iztīrīts",
+            "loginRequired": "Lūdzu, piesakieties savā profilā, lai veiktu pasūtījumu."
+        },
+        "columns": {
+            "product": "Prece",
+            "price": "Cena",
+            "quantity": "Daudzums",
+            "total": "Kopā",
+            "action": "Darbība"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Noņemt preci",
+                "content": "Vai tiešām vēlaties noņemt šo preci no groza?",
+                "ok": "Jā, noņemt",
+                "cancel": "Atcelt"
+            },
+            "clearCart": {
+                "title": "Iztīrīt grozu",
+                "content": "Vai tiešām vēlaties noņemt visas preces no groza?",
+                "ok": "Jā, iztīrīt grozu",
+                "cancel": "Atcelt"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalogs",
+        "filters": "Filtri",
+        "addToCart": "Pievienot grozam",
+        "loading": "Ielādē datus...",
+        "messages": {
+            "addedToCart": "Prece pievienota grozam!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrēt preces",
+        "resetAll": "Atiestatīt visu",
+        "apply": "Pielietot",
+        "currency": "Valūta",
+        "search": "Meklēt",
+        "searchPlaceholder": "Ievadiet preces nosaukumu...",
+        "sortBy": "Kārtot pēc",
+        "sortOptions": {
+            "default": "Noklusējuma",
+            "priceAsc": "Cena ↑",
+            "priceDesc": "Cena ↓",
+            "ratingDesc": "Augstākais vērtējums"
+        },
+        "priceRange": "Cenu diapazons",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Pircēju vērtējums",
+        "ratingOptions": {
+            "any": "Jebkāds",
+            "fourAndAbove": "4★ un vairāk",
+            "threeAndAbove": "3★ un vairāk"
+        },
+        "messages": {
+            "applied": "Filtri veiksmīgi pielietoti",
+            "reset": "Filtri atiestatīti uz noklusējuma"
+        }
+    },
+    "productDetail": {
+        "backCart": "Atpakaļ uz grozu",
+        "back": "Atpakaļ uz katalogu",
+        "reviews": "atsauksmes",
+        "description": "Apraksts",
+        "addToCart": "Pievienot grozam",
+        "messages": {
+            "addedToCart": "Prece pievienota grozam!"
+        }
+    },
+    "loginPage": {
+        "title": "Pieteikšanās",
+        "hint": "Padoms: izmantojiet <b>mor_2314</b> un <b>83r5^_</b>",
+        "username": "Lietotājvārds",
+        "password": "Parole",
+        "signIn": "Pieteikties",
+        "backToCatalog": "Atpakaļ uz katalogu",
+        "validation": {
+            "username": "Lūdzu, ievadiet lietotājvārdu!",
+            "password": "Lūdzu, ievadiet paroli!"
+        },
+        "messages": {
+            "success": "Veiksmīga pieteikšanās!",
+            "error": "Nepareizs lietotājvārds vai parole"
+        }
+    },
+    "profilePage": {
+        "title": "Mans profils",
+        "logout": "Izrakstīties",
+        "accountDetails": "Konta dati",
+        "deliveryAddress": "Piegādes adrese",
+        "paymentMethod": "Maksājuma veids",
+        "labels": {
+            "username": "Lietotājvārds:",
+            "address": "Adrese:",
+            "card": "Karte:"
+        },
+        "orderHistory": "Pasūtījumu vēsture",
+        "noOrders": "Pasūtījumi nav atrasti.",
+        "messages": {
+            "logoutSuccess": "Veiksmīga izrakstīšanās"
+        },
+        "modals": {
+            "logout": {
+                "title": "Izrakstīties",
+                "content": "Vai tiešām vēlaties izrakstīties no sava konta?",
+                "ok": "Jā, izrakstīties",
+                "cancel": "Atcelt"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalogs",
+        "cart": "Grozs",
+        "profile": "Profils",
+        "notLoggedIn": "Nav pieteicies"
+    },
+    "checkoutPage": {
+        "title": "Pasūtījuma noformēšana",
+        "warning": "* Šī ir demonstrācijas lapa. Lauki ir aizpildīti automātiski un nav rediģējami.",
+        "cardTitle": "Piegādes un maksājuma dati",
+        "labels": {
+            "ownerName": "Īpašnieka vārds",
+            "country": "Valsts",
+            "street": "Iela",
+            "city": "Pilsēta",
+            "cardNumber": "Kartes numurs",
+            "expiry": "Derīguma termiņš",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Atpakaļ",
+            "confirmAndPay": "Apstiprināt un apmaksāt"
+        },
+        "messages": {
+            "success": "Maksājums veiksmīgs! Šis ir testa pasūtījums."
+        }
+    }
+}

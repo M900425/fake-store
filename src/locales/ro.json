@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Acces restricționat",
+        "subTitle": "Vă rugăm să vă autentificați pentru a vizualiza profilul și istoricul comenzilor.",
+        "cta": "Mergi la autentificare"
+    },
+    "categories": {
+        "all": "TOATE",
+        "electronics": "Electronică",
+        "jewelery": "Bijuterii",
+        "men's clothing": "Îmbrăcăminte bărbați",
+        "women's clothing": "Îmbrăcăminte femei"
+    },
+    "cartPage": {
+        "title": "Coș de cumpărături",
+        "clearCart": "Golește coșul",
+        "emptyMessage": "Coșul tău este gol.",
+        "goToCatalog": "Mergi la catalog",
+        "total": "Total:",
+        "proceedToCheckout": "Finalizează comanda",
+        "loading": "Se încarcă datele...",
+        "messages": {
+            "itemRemoved": "Articol eliminat din coș",
+            "cartCleared": "Coș golit cu succes",
+            "loginRequired": "Vă rugăm să vă conectați la profilul dvs. pentru a plasa o comandă."
+        },
+        "columns": {
+            "product": "Produs",
+            "price": "Preț",
+            "quantity": "Cantitate",
+            "total": "Total",
+            "action": "Acțiune"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Elimină articol",
+                "content": "Ești sigur că vrei să elimini acest articol din coș?",
+                "ok": "Da, elimină",
+                "cancel": "Anulează"
+            },
+            "clearCart": {
+                "title": "Golește coșul",
+                "content": "Ești sigur că vrei să golești coșul?",
+                "ok": "Da, golește",
+                "cancel": "Anulează"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Catalog",
+        "filters": "Filtre",
+        "addToCart": "Adaugă în coș",
+        "loading": "Se încarcă datele...",
+        "messages": {
+            "addedToCart": "Produs adăugat în coș!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrează produse",
+        "resetAll": "Resetează tot",
+        "apply": "Aplică",
+        "currency": "Monedă",
+        "search": "Caută",
+        "searchPlaceholder": "Introdu numele produsului...",
+        "sortBy": "Sortează după",
+        "sortOptions": {
+            "default": "Implicit",
+            "priceAsc": "Preț ↑",
+            "priceDesc": "Preț ↓",
+            "ratingDesc": "Cele mai apreciate"
+        },
+        "priceRange": "Interval preț",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Evaluare clienți",
+        "ratingOptions": {
+            "any": "Oricare",
+            "fourAndAbove": "4★ și peste",
+            "threeAndAbove": "3★ și peste"
+        },
+        "messages": {
+            "applied": "Filtre aplicate",
+            "reset": "Filtre resetate"
+        }
+    },
+    "productDetail": {
+        "backCart": "Înapoi la coș",
+        "back": "Înapoi la catalog",
+        "reviews": "recenzii",
+        "description": "Descriere",
+        "addToCart": "Adaugă în coș",
+        "messages": {
+            "addedToCart": "Produs adăugat în coș!"
+        }
+    },
+    "loginPage": {
+        "title": "Autentificare",
+        "hint": "Sugestie: folosește <b>mor_2314</b> și <b>83r5^_</b>",
+        "username": "Utilizator",
+        "password": "Parolă",
+        "signIn": "Autentifică-te",
+        "backToCatalog": "Înapoi la catalog",
+        "validation": {
+            "username": "Te rugăm să introduci numele de utilizator!",
+            "password": "Te rugăm să introduci parola!"
+        },
+        "messages": {
+            "success": "Autentificare reușită!",
+            "error": "Utilizator sau parolă incorectă"
+        }
+    },
+    "profilePage": {
+        "title": "Profilul meu",
+        "logout": "Deconectare",
+        "accountDetails": "Detalii cont",
+        "deliveryAddress": "Adresă de livrare",
+        "paymentMethod": "Metodă de plată",
+        "labels": {
+            "username": "Utilizator:",
+            "address": "Adresă:",
+            "card": "Card:"
+        },
+        "orderHistory": "Istoric comenzi",
+        "noOrders": "Nu au fost găsite comenzi.",
+        "messages": {
+            "logoutSuccess": "Deconectare reușită"
+        },
+        "modals": {
+            "logout": {
+                "title": "Deconectare",
+                "content": "Ești sigur că vrei să te deconectezi?",
+                "ok": "Da, deconectează-mă",
+                "cancel": "Anulează"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Catalog",
+        "cart": "Coș",
+        "profile": "Profil",
+        "notLoggedIn": "Neautentificat"
+    },
+    "checkoutPage": {
+        "title": "Finalizare comandă",
+        "warning": "* Aceasta este o pagină demonstrativă. Câmpurile sunt completate automat și nu pot fi editate.",
+        "cardTitle": "Date de livrare și plată",
+        "labels": {
+            "ownerName": "Numele posesorului",
+            "country": "Țară",
+            "street": "Stradă",
+            "city": "Oraș",
+            "cardNumber": "Număr card",
+            "expiry": "Data expirării",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Înapoi",
+            "confirmAndPay": "Confirmă și plătește"
+        },
+        "messages": {
+            "success": "Plată reușită! Aceasta este o comandă de test."
+        }
+    }
+}

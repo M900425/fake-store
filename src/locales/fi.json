@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Pääsy rajoitettu",
+        "subTitle": "Kirjaudu sisään nähdäksesi profiilisi ja tilaushistoriasi.",
+        "cta": "Kirjaudu sisään"
+    },
+    "categories": {
+        "all": "KAIKKI",
+        "electronics": "Elektroniikka",
+        "jewelery": "Korut",
+        "men's clothing": "Miesten vaatteet",
+        "women's clothing": "Naisten vaatteet"
+    },
+    "cartPage": {
+        "title": "Ostoskori",
+        "clearCart": "Tyhjennä kori",
+        "emptyMessage": "Ostoskorisi on tyhjä.",
+        "goToCatalog": "Siirry katalogiin",
+        "total": "Yhteensä:",
+        "proceedToCheckout": "Kassalle",
+        "loading": "Ladataan tietoja...",
+        "messages": {
+            "itemRemoved": "Tuote poistettu korista",
+            "cartCleared": "Kori tyhjennetty",
+            "loginRequired": "Kirjaudu sisään tehdäksesi tilauksen."
+        },
+        "columns": {
+            "product": "Tuote",
+            "price": "Hinta",
+            "quantity": "Määrä",
+            "total": "Yhteensä",
+            "action": "Toiminto"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Poista tuote",
+                "content": "Haluatko varmasti poistaa tämän tuotteen korista?",
+                "ok": "Kyllä, poista",
+                "cancel": "Peruuta"
+            },
+            "clearCart": {
+                "title": "Tyhjennä kori",
+                "content": "Haluatko varmasti tyhjentää koko korin?",
+                "ok": "Kyllä, tyhjennä",
+                "cancel": "Peruuta"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalogi",
+        "filters": "Suodattimet",
+        "addToCart": "Lisää koriin",
+        "loading": "Ladataan tietoja...",
+        "messages": {
+            "addedToCart": "Tuote lisätty koriin!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Suodata tuotteita",
+        "resetAll": "Tyhjennä kaikki",
+        "apply": "Käytä",
+        "currency": "Valuutta",
+        "search": "Hae",
+        "searchPlaceholder": "Kirjoita tuotteen nimi...",
+        "sortBy": "Lajittele",
+        "sortOptions": {
+            "default": "Oletus",
+            "priceAsc": "Hinta ↑",
+            "priceDesc": "Hinta ↓",
+            "ratingDesc": "Parhaiten arvioidut"
+        },
+        "priceRange": "Hintaväli",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Asiakasarviot",
+        "ratingOptions": {
+            "any": "Kaikki",
+            "fourAndAbove": "4★ ja yli",
+            "threeAndAbove": "3★ ja yli"
+        },
+        "messages": {
+            "applied": "Suodattimet käytetty",
+            "reset": "Suodattimet nollattu"
+        }
+    },
+    "productDetail": {
+        "backCart": "Takaisin ostoskoriin",
+        "back": "Takaisin katalogiin",
+        "reviews": "arvostelua",
+        "description": "Kuvaus",
+        "addToCart": "Lisää koriin",
+        "messages": {
+            "addedToCart": "Tuote lisätty koriin!"
+        }
+    },
+    "loginPage": {
+        "title": "Kirjaudu sisään",
+        "hint": "Vinkki: käytä <b>mor_2314</b> ja <b>83r5^_</b>",
+        "username": "Käyttäjätunnus",
+        "password": "Salasana",
+        "signIn": "Kirjaudu sisään",
+        "backToCatalog": "Takaisin katalogiin",
+        "validation": {
+            "username": "Anna käyttäjätunnus!",
+            "password": "Anna salasana!"
+        },
+        "messages": {
+            "success": "Kirjautuminen onnistui!",
+            "error": "Virheellinen käyttäjätunnus tai salasana"
+        }
+    },
+    "profilePage": {
+        "title": "Oma profiili",
+        "logout": "Kirjaudu ulos",
+        "accountDetails": "Tilin tiedot",
+        "deliveryAddress": "Toimitusosoite",
+        "paymentMethod": "Maksutapa",
+        "labels": {
+            "username": "Käyttäjätunnus:",
+            "address": "Osoite:",
+            "card": "Kortti:"
+        },
+        "orderHistory": "Tilaushistoria",
+        "noOrders": "Ei tilauksia.",
+        "messages": {
+            "logoutSuccess": "Kirjauduttu ulos"
+        },
+        "modals": {
+            "logout": {
+                "title": "Kirjaudu ulos",
+                "content": "Haluatko varmasti kirjautua ulos?",
+                "ok": "Kyllä, kirjaudu ulos",
+                "cancel": "Peruuta"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalogi",
+        "cart": "Ostoskori",
+        "profile": "Profiili",
+        "notLoggedIn": "Ei kirjautunut sisään"
+    },
+    "checkoutPage": {
+        "title": "Viimeistele tilaus",
+        "warning": "* Tämä on esittelysivu. Kentät on täytetty automaattisesti, eikä niitä voi muokata.",
+        "cardTitle": "Toimitus- ja maksutiedot",
+        "labels": {
+            "ownerName": "Kortinhaltijan nimi",
+            "country": "Maa",
+            "street": "Katu",
+            "city": "Kaupunki",
+            "cardNumber": "Kortin numero",
+            "expiry": "Viimeinen voimassaolopäivä",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Takaisin",
+            "confirmAndPay": "Vahvista ja maksa"
+        },
+        "messages": {
+            "success": "Maksu onnistui! Tämä on testitilaus."
+        }
+    }
+}

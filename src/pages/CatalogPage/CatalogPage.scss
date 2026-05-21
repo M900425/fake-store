@@ -120,3 +120,8 @@
 .no-margin {
     margin: 0;
 }
+
+.footer-filter-buttons {
+    display: flex;
+    gap: $base-distance;
+}

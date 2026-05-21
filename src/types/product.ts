@@ -12,3 +12,7 @@ export interface Product {
     image: string;
     rating: Rating;
 }
+
+export interface CartItem extends Product {
+    quantity: number;
+}

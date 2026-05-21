@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Acceso restringido",
+        "subTitle": "Por favor, inicie sesión para ver su perfil y el historial de pedidos.",
+        "cta": "Ir a iniciar sesión"
+    },
+    "categories": {
+        "all": "TODOS",
+        "electronics": "Electrónica",
+        "jewelery": "Joyería",
+        "men's clothing": "Ropa de hombre",
+        "women's clothing": "Ropa de mujer"
+    },
+    "cartPage": {
+        "title": "Carrito de compras",
+        "clearCart": "Vaciar carrito",
+        "emptyMessage": "Su carrito está actualmente vacío.",
+        "goToCatalog": "Ir al catálogo",
+        "total": "Total:",
+        "proceedToCheckout": "Proceder al pago",
+        "loading": "Cargando datos...",
+        "messages": {
+            "itemRemoved": "Artículo eliminado del carrito",
+            "cartCleared": "Carrito vaciado con éxito",
+            "loginRequired": "Por favor, inicie sesión en su perfil para realizar un pedido."
+        },
+        "columns": {
+            "product": "Producto",
+            "price": "Precio",
+            "quantity": "Cantidad",
+            "total": "Total",
+            "action": "Acción"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Eliminar artículo",
+                "content": "¿Está seguro de que desea eliminar este artículo del carrito?",
+                "ok": "Sí, eliminar",
+                "cancel": "Cancelar"
+            },
+            "clearCart": {
+                "title": "Vaciar carrito",
+                "content": "¿Está seguro de que desea eliminar todos los artículos del carrito?",
+                "ok": "Sí, vaciar",
+                "cancel": "Cancelar"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Catálogo",
+        "filters": "Filtros",
+        "addToCart": "Añadir al carrito",
+        "loading": "Cargando datos...",
+        "messages": {
+            "addedToCart": "¡Producto añadido al carrito!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrar productos",
+        "resetAll": "Restablecer todo",
+        "apply": "Aplicar",
+        "currency": "Moneda",
+        "search": "Buscar",
+        "searchPlaceholder": "Escriba el nombre del producto...",
+        "sortBy": "Ordenar por",
+        "sortOptions": {
+            "default": "Por defecto",
+            "priceAsc": "Precio ↑",
+            "priceDesc": "Precio ↓",
+            "ratingDesc": "Mejor valorados"
+        },
+        "priceRange": "Rango de precio",
+        "min": "Mín",
+        "max": "Máx",
+        "customerRating": "Valoración del cliente",
+        "ratingOptions": {
+            "any": "Cualquiera",
+            "fourAndAbove": "4★ o más",
+            "threeAndAbove": "3★ o más"
+        },
+        "messages": {
+            "applied": "Filtros aplicados correctamente",
+            "reset": "Filtros restablecidos"
+        }
+    },
+    "productDetail": {
+        "backCart": "Volver al carrito",
+        "back": "Volver al catálogo",
+        "reviews": "reseñas",
+        "description": "Descripción",
+        "addToCart": "Añadir al carrito",
+        "messages": {
+            "addedToCart": "¡Producto añadido al carrito!"
+        }
+    },
+    "loginPage": {
+        "title": "Iniciar sesión",
+        "hint": "Pista: use <b>mor_2314</b> y <b>83r5^_</b>",
+        "username": "Nombre de usuario",
+        "password": "Contraseña",
+        "signIn": "Iniciar sesión",
+        "backToCatalog": "Volver al catálogo",
+        "validation": {
+            "username": "¡Por favor, introduzca su nombre de usuario!",
+            "password": "¡Por favor, introduzca su contraseña!"
+        },
+        "messages": {
+            "success": "¡Inicio de sesión exitoso!",
+            "error": "Nombre de usuario o contraseña incorrectos"
+        }
+    },
+    "profilePage": {
+        "title": "Mi perfil",
+        "logout": "Cerrar sesión",
+        "accountDetails": "Detalles de la cuenta",
+        "deliveryAddress": "Dirección de entrega",
+        "paymentMethod": "Método de pago",
+        "labels": {
+            "username": "Nombre de usuario:",
+            "address": "Dirección:",
+            "card": "Tarjeta:"
+        },
+        "orderHistory": "Historial de pedidos",
+        "noOrders": "No se encontraron pedidos.",
+        "messages": {
+            "logoutSuccess": "Cierre de sesión exitoso"
+        },
+        "modals": {
+            "logout": {
+                "title": "Cerrar sesión",
+                "content": "¿Está seguro de que desea cerrar su sesión?",
+                "ok": "Sí, cerrar sesión",
+                "cancel": "Cancelar"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Catálogo",
+        "cart": "Carrito",
+        "profile": "Perfil",
+        "notLoggedIn": "No ha iniciado sesión"
+    },
+    "checkoutPage": {
+        "title": "Finalizar compra",
+        "warning": "* Esta es una página de demostración. Los campos se completan automáticamente y no se pueden editar.",
+        "cardTitle": "Datos de envío y pago",
+        "labels": {
+            "ownerName": "Nombre del titular",
+            "country": "País",
+            "street": "Calle",
+            "city": "Ciudad",
+            "cardNumber": "Número de tarjeta",
+            "expiry": "Fecha de caducidad",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Volver",
+            "confirmAndPay": "Confirmar y pagar"
+        },
+        "messages": {
+            "success": "¡Pago exitoso! Este es un pedido de prueba."
+        }
+    }
+}

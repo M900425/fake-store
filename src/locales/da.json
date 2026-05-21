@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Adgang begrænset",
+        "subTitle": "Venligst log ind for at se din profil og ordrehistorik.",
+        "cta": "Gå til log ind"
+    },
+    "categories": {
+        "all": "ALLE",
+        "electronics": "Elektronik",
+        "jewelery": "Smykker",
+        "men's clothing": "Herretøj",
+        "women's clothing": "Dametøj"
+    },
+    "cartPage": {
+        "title": "Indkøbskurv",
+        "clearCart": "Tøm kurv",
+        "emptyMessage": "Din kurv er tom.",
+        "goToCatalog": "Gå til katalog",
+        "total": "Total:",
+        "proceedToCheckout": "Gå til betaling",
+        "loading": "Indlæser data...",
+        "messages": {
+            "itemRemoved": "Vare fjernet fra kurven",
+            "cartCleared": "Kurv tømt",
+            "loginRequired": "Log venligst ind på din profil for at placere en ordre."
+        },
+        "columns": {
+            "product": "Produkt",
+            "price": "Pris",
+            "quantity": "Antal",
+            "total": "Total",
+            "action": "Handling"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Fjern vare",
+                "content": "Er du sikker på, at du vil fjerne denne vare fra din kurv?",
+                "ok": "Ja, fjern",
+                "cancel": "Annuller"
+            },
+            "clearCart": {
+                "title": "Tøm kurv",
+                "content": "Er du sikker på, at du vil fjerne alle varer fra din kurv?",
+                "ok": "Ja, tøm kurv",
+                "cancel": "Annuller"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filtre",
+        "addToCart": "Læg i kurv",
+        "loading": "Indlæser data...",
+        "messages": {
+            "addedToCart": "Produkt tilføjet til kurven!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtrer produkter",
+        "resetAll": "Nulstil alt",
+        "apply": "Anvend",
+        "currency": "Valuta",
+        "search": "Søg",
+        "searchPlaceholder": "Indtast produktnavn...",
+        "sortBy": "Sorter efter",
+        "sortOptions": {
+            "default": "Standard",
+            "priceAsc": "Pris ↑",
+            "priceDesc": "Pris ↓",
+            "ratingDesc": "Bedst bedømt"
+        },
+        "priceRange": "Prisinterval",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Kundevurdering",
+        "ratingOptions": {
+            "any": "Alle",
+            "fourAndAbove": "4★ og derover",
+            "threeAndAbove": "3★ og derover"
+        },
+        "messages": {
+            "applied": "Filtre anvendt",
+            "reset": "Filtre nulstillet"
+        }
+    },
+    "productDetail": {
+        "backCart": "Tilbage til indkøbskurven",
+        "back": "Tilbage til katalog",
+        "reviews": "anmeldelser",
+        "description": "Beskrivelse",
+        "addToCart": "Læg i kurv",
+        "messages": {
+            "addedToCart": "Produkt tilføjet til kurven!"
+        }
+    },
+    "loginPage": {
+        "title": "Log ind",
+        "hint": "Tip: brug <b>mor_2314</b> og <b>83r5^_</b>",
+        "username": "Brugernavn",
+        "password": "Adgangskode",
+        "signIn": "Log ind",
+        "backToCatalog": "Tilbage til katalog",
+        "validation": {
+            "username": "Indtast venligst dit brugernavn!",
+            "password": "Indtast venligst din adgangskode!"
+        },
+        "messages": {
+            "success": "Logget ind!",
+            "error": "Forkert brugernavn eller adgangskode"
+        }
+    },
+    "profilePage": {
+        "title": "Min profil",
+        "logout": "Log ud",
+        "accountDetails": "Kontooplysninger",
+        "deliveryAddress": "Leveringsadresse",
+        "paymentMethod": "Betalingsmetode",
+        "labels": {
+            "username": "Brugernavn:",
+            "address": "Adresse:",
+            "card": "Kort:"
+        },
+        "orderHistory": "Ordrehistorik",
+        "noOrders": "Ingen ordrer fundet.",
+        "messages": {
+            "logoutSuccess": "Logget ud"
+        },
+        "modals": {
+            "logout": {
+                "title": "Log ud",
+                "content": "Er du sikker på, at du vil logge ud?",
+                "ok": "Ja, log ud",
+                "cancel": "Annuller"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Kurv",
+        "profile": "Profil",
+        "notLoggedIn": "Ikke logget ind"
+    },
+    "checkoutPage": {
+        "title": "Gennemfør bestilling",
+        "warning": "* Dette er en demoside. Felterne er udfyldt automatisk og kan ikke redigeres.",
+        "cardTitle": "Leverings- og betalingsoplysninger",
+        "labels": {
+            "ownerName": "Kortholders navn",
+            "country": "Land",
+            "street": "Vej",
+            "city": "By",
+            "cardNumber": "Kortnummer",
+            "expiry": "Udløbsdato",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Gå tilbage",
+            "confirmAndPay": "Bekræft og betal"
+        },
+        "messages": {
+            "success": "Betaling gennemført! Dette er en testordre."
+        }
+    }
+}

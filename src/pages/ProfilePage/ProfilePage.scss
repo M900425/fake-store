@@ -1,0 +1,9 @@
+@import '@/variables.scss';
+
+.no-margin {
+    margin: 0;
+}
+
+.info-section {
+    margin: 0 $base-distance * 3 0 $base-distance * 3;
+}

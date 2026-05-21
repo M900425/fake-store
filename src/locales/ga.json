@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Rochtain teoranta",
+        "subTitle": "Logáil isteach le do thoil chun do phróifíl agus stair na n-orduithe a fheiceáil.",
+        "cta": "Logáil isteach"
+    },
+    "categories": {
+        "all": "UILE",
+        "electronics": "Leictreonaic",
+        "jewelery": "Seodra",
+        "men's clothing": "Éadaí na bhfear",
+        "women's clothing": "Éadaí na mban"
+    },
+    "cartPage": {
+        "title": "Cairt Siopadóireachta",
+        "clearCart": "Folmhaigh an chairt",
+        "emptyMessage": "Tá do chairt folamh faoi láthair.",
+        "goToCatalog": "Téigh go dtí an catalóg",
+        "total": "Iomlán:",
+        "proceedToCheckout": "Ag íoc",
+        "loading": "Á lódáil...",
+        "messages": {
+            "itemRemoved": "Mír bainte as an gcairt",
+            "cartCleared": "Cairt folmhaithe go rathúil",
+            "loginRequired": "Logáil isteach i do phróifíl le do thoil chun ordú a chur."
+        },
+        "columns": {
+            "product": "Táirge",
+            "price": "Praghas",
+            "quantity": "Cainníocht",
+            "total": "Iomlán",
+            "action": "Gníomh"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Bain mír",
+                "content": "An bhfuil tú cinnte gur mhaith leat an mír seo a bhaint as do chairt?",
+                "ok": "Sea, bain",
+                "cancel": "Cealaigh"
+            },
+            "clearCart": {
+                "title": "Folmhaigh an chairt",
+                "content": "An bhfuil tú cinnte gur mhaith leat na míreanna go léir a bhaint as do chairt?",
+                "ok": "Sea, folmhaigh",
+                "cancel": "Cealaigh"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Catalóg",
+        "filters": "Scagairí",
+        "addToCart": "Cuir sa chairt",
+        "loading": "Á lódáil...",
+        "messages": {
+            "addedToCart": "Táirge curtha sa chairt!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Scag táirgí",
+        "resetAll": "Athshocraigh gach rud",
+        "apply": "Cuir i bhfeidhm",
+        "currency": "Airgeadra",
+        "search": "Cuardaigh",
+        "searchPlaceholder": "Clóscríobh ainm an táirge...",
+        "sortBy": "Sórtáil de réir",
+        "sortOptions": {
+            "default": "Réamhshocrú",
+            "priceAsc": "Praghas ↑",
+            "priceDesc": "Praghas ↓",
+            "ratingDesc": "Is fearr rátáil"
+        },
+        "priceRange": "Raon praghsanna",
+        "min": "Íos",
+        "max": "Uas",
+        "customerRating": "Rátáil an chustaiméara",
+        "ratingOptions": {
+            "any": "Ar bith",
+            "fourAndAbove": "4★ agus os a chionn",
+            "threeAndAbove": "3★ agus os a chionn"
+        },
+        "messages": {
+            "applied": "Scagairí curtha i bhfeidhm",
+            "reset": "Scagairí athshocraithe"
+        }
+    },
+    "productDetail": {
+        "backCart": "Ar ais chuig an gcairt",
+        "back": "Ar ais go dtí an catalóg",
+        "reviews": "athbhreithnithe",
+        "description": "Cur síos",
+        "addToCart": "Cuir sa chairt",
+        "messages": {
+            "addedToCart": "Táirge curtha sa chairt!"
+        }
+    },
+    "loginPage": {
+        "title": "Logáil isteach",
+        "hint": "Leid: úsáid <b>mor_2314</b> agus <b>83r5^_</b>",
+        "username": "Ainm úsáideora",
+        "password": "Pasfhocal",
+        "signIn": "Logáil isteach",
+        "backToCatalog": "Ar ais go dtí an catalóg",
+        "validation": {
+            "username": "Iontráil d'ainm úsáideora!",
+            "password": "Iontráil do phasfhocal!"
+        },
+        "messages": {
+            "success": "Logáilte isteach go rathúil!",
+            "error": "Ainm úsáideora nó pasfhocal mícheart"
+        }
+    },
+    "profilePage": {
+        "title": "Mo phróifíl",
+        "logout": "Logáil amach",
+        "accountDetails": "Sonraí cuntais",
+        "deliveryAddress": "Seoladh seachadta",
+        "paymentMethod": "Modh íocaíochta",
+        "labels": {
+            "username": "Ainm úsáideora:",
+            "address": "Seoladh:",
+            "card": "Cárta:"
+        },
+        "orderHistory": "Stair na nOrdú",
+        "noOrders": "Níor aimsíodh aon orduithe.",
+        "messages": {
+            "logoutSuccess": "Logáilte amach go rathúil"
+        },
+        "modals": {
+            "logout": {
+                "title": "Logáil amach",
+                "content": "An bhfuil tú cinnte gur mhaith leat logáil amach?",
+                "ok": "Sea, logáil amach",
+                "cancel": "Cealaigh"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Catalóg",
+        "cart": "Cairt",
+        "profile": "Próifíl",
+        "notLoggedIn": "Gan logáil isteach"
+    },
+    "checkoutPage": {
+        "title": "An tOrdú a Chur i gCrích",
+        "warning": "* Is leathanach taispeána é seo. Tá na réimsí líonta go huathoibríoch agus ní féidir iad a chur in eagar.",
+        "cardTitle": "Sonraí seachadta agus íocaíochta",
+        "labels": {
+            "ownerName": "Ainm an úinéara",
+            "country": "Tír",
+            "street": "Sráid",
+            "city": "Cathair",
+            "cardNumber": "Uimhir an chárta",
+            "expiry": "Dáta éaga",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Ar ais",
+            "confirmAndPay": "Deimhnigh agus íoc"
+        },
+        "messages": {
+            "success": "Íocaíocht rathúil! Is ordú tástála é seo."
+        }
+    }
+}

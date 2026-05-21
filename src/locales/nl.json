@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Toegang geweigerd",
+        "subTitle": "Log in om je profiel en bestelgeschiedenis te bekijken.",
+        "cta": "Ga naar inloggen"
+    },
+    "categories": {
+        "all": "ALLES",
+        "electronics": "Elektronica",
+        "jewelery": "Sieraden",
+        "men's clothing": "Herenkleding",
+        "women's clothing": "Dameskleding"
+    },
+    "cartPage": {
+        "title": "Winkelwagen",
+        "clearCart": "Winkelwagen legen",
+        "emptyMessage": "Je winkelwagen is momenteel leeg.",
+        "goToCatalog": "Ga naar catalogus",
+        "total": "Totaal:",
+        "proceedToCheckout": "Afrekenen",
+        "loading": "Gegevens laden...",
+        "messages": {
+            "itemRemoved": "Artikel verwijderd uit winkelwagen",
+            "cartCleared": "Winkelwagen succesvol geleegd",
+            "loginRequired": "Log in op je profiel om een bestelling te plaatsen."
+        },
+        "columns": {
+            "product": "Product",
+            "price": "Prijs",
+            "quantity": "Aantal",
+            "total": "Totaal",
+            "action": "Actie"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Artikel verwijderen",
+                "content": "Weet je zeker dat je dit artikel uit je winkelwagen wilt verwijderen?",
+                "ok": "Ja, verwijderen",
+                "cancel": "Annuleren"
+            },
+            "clearCart": {
+                "title": "Winkelwagen legen",
+                "content": "Weet je zeker dat je alle artikelen uit je winkelwagen wilt verwijderen?",
+                "ok": "Ja, legen",
+                "cancel": "Annuleren"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Catalogus",
+        "filters": "Filters",
+        "addToCart": "In winkelwagen",
+        "loading": "Gegevens laden...",
+        "messages": {
+            "addedToCart": "Product toegevoegd aan winkelwagen!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Producten filteren",
+        "resetAll": "Alles resetten",
+        "apply": "Toepassen",
+        "currency": "Valuta",
+        "search": "Zoeken",
+        "searchPlaceholder": "Typ productnaam...",
+        "sortBy": "Sorteren op",
+        "sortOptions": {
+            "default": "Standaard",
+            "priceAsc": "Prijs ↑",
+            "priceDesc": "Prijs ↓",
+            "ratingDesc": "Best beoordeeld"
+        },
+        "priceRange": "Prijsklasse",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Klantbeoordeling",
+        "ratingOptions": {
+            "any": "Elke",
+            "fourAndAbove": "4★ en hoger",
+            "threeAndAbove": "3★ en hoger"
+        },
+        "messages": {
+            "applied": "Filters succesvol toegepast",
+            "reset": "Filters gereset naar standaard"
+        }
+    },
+    "productDetail": {
+        "backCart": "Terug naar winkelwagen",
+        "back": "Terug naar catalogus",
+        "reviews": "beoordelingen",
+        "description": "Beschrijving",
+        "addToCart": "In winkelwagen",
+        "messages": {
+            "addedToCart": "Product toegevoegd aan winkelwagen!"
+        }
+    },
+    "loginPage": {
+        "title": "Inloggen",
+        "hint": "Hint: gebruik <b>mor_2314</b> en <b>83r5^_</b>",
+        "username": "Gebruikersnaam",
+        "password": "Wachtwoord",
+        "signIn": "Inloggen",
+        "backToCatalog": "Terug naar catalogus",
+        "validation": {
+            "username": "Voer je gebruikersnaam in!",
+            "password": "Voer je wachtwoord in!"
+        },
+        "messages": {
+            "success": "Succesvol ingelogd!",
+            "error": "Ongeldige gebruikersnaam of wachtwoord"
+        }
+    },
+    "profilePage": {
+        "title": "Mijn profiel",
+        "logout": "Uitloggen",
+        "accountDetails": "Accountgegevens",
+        "deliveryAddress": "Bezorgadres",
+        "paymentMethod": "Betaalmethode",
+        "labels": {
+            "username": "Gebruikersnaam:",
+            "address": "Adres:",
+            "card": "Kaart:"
+        },
+        "orderHistory": "Bestelgeschiedenis",
+        "noOrders": "Geen bestellingen gevonden.",
+        "messages": {
+            "logoutSuccess": "Succesvol uitgelogd"
+        },
+        "modals": {
+            "logout": {
+                "title": "Uitloggen",
+                "content": "Weet je zeker dat je wilt uitloggen?",
+                "ok": "Ja, uitloggen",
+                "cancel": "Annuleren"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Catalogus",
+        "cart": "Winkelwagen",
+        "profile": "Profiel",
+        "notLoggedIn": "Niet ingelogd"
+    },
+    "checkoutPage": {
+        "title": "Afrekenen",
+        "warning": "* Dit is een demopagina. Velden worden automatisch ingevuld en kunnen niet worden bewerkt.",
+        "cardTitle": "Leverings- en betaalgegevens",
+        "labels": {
+            "ownerName": "Naam kaarthouder",
+            "country": "Land",
+            "street": "Straat",
+            "city": "Stad",
+            "cardNumber": "Kaartnummer",
+            "expiry": "Vervaldatum",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Ga terug",
+            "confirmAndPay": "Bevestigen en betalen"
+        },
+        "messages": {
+            "success": "Betaling geslaagd! Dit is een testbestelling."
+        }
+    }
+}

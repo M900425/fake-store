@@ -1,0 +1,26 @@
+@import '@/variables.scss';
+
+.login-page-root {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    .login-card {
+        width: 350px;
+    }
+
+    .login-title {
+        text-align: center;
+    }
+
+    .login-hint {
+        margin-bottom: $base-distance * 2;
+        text-align: center;
+    }
+
+    .buttons-section {
+        display: flex;
+        flex-direction: column;
+        gap: $base-distance;
+    }
+}

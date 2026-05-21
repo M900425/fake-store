@@ -1,1 +1,164 @@
-{}
+{
+    "loginPrompt": {
+        "title": "Dostęp ograniczony",
+        "subTitle": "Zaloguj się, aby wyświetlić swój profil i historię zamówień.",
+        "cta": "Przejdź do logowania"
+    },
+    "categories": {
+        "all": "WSZYSTKO",
+        "electronics": "Elektronika",
+        "jewelery": "Biżuteria",
+        "men's clothing": "Odzież męska",
+        "women's clothing": "Odzież damska"
+    },
+    "cartPage": {
+        "title": "Koszyk",
+        "clearCart": "Wyczyść koszyk",
+        "emptyMessage": "Twój koszyk jest obecnie pusty.",
+        "goToCatalog": "Przejdź do katalogu",
+        "total": "Razem:",
+        "proceedToCheckout": "Przejdź do kasy",
+        "loading": "Ładowanie danych...",
+        "messages": {
+            "itemRemoved": "Produkt usunięty z koszyka",
+            "cartCleared": "Koszyk pomyślnie wyczyszczony",
+            "loginRequired": "Proszę zaloguj się na swój profil, aby złożyć zamówienie."
+        },
+        "columns": {
+            "product": "Produkt",
+            "price": "Cena",
+            "quantity": "Ilość",
+            "total": "Suma",
+            "action": "Akcja"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Usuń produkt",
+                "content": "Czy na pewno chcesz usunąć ten produkt z koszyka?",
+                "ok": "Tak, usuń",
+                "cancel": "Anuluj"
+            },
+            "clearCart": {
+                "title": "Wyczyść koszyk",
+                "content": "Czy na pewno chcesz usunąć wszystkie produkty z koszyka?",
+                "ok": "Tak, wyczyść",
+                "cancel": "Anuluj"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalog",
+        "filters": "Filtry",
+        "addToCart": "Do koszyka",
+        "loading": "Ładowanie danych...",
+        "messages": {
+            "addedToCart": "Produkt dodany do koszyka!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtruj produkty",
+        "resetAll": "Resetuj wszystko",
+        "apply": "Zastosuj",
+        "currency": "Waluta",
+        "search": "Szukaj",
+        "searchPlaceholder": "Wpisz nazwę produktu...",
+        "sortBy": "Sortuj według",
+        "sortOptions": {
+            "default": "Domyślnie",
+            "priceAsc": "Cena ↑",
+            "priceDesc": "Cena ↓",
+            "ratingDesc": "Najwyżej oceniane"
+        },
+        "priceRange": "Przedział cenowy",
+        "min": "Min",
+        "max": "Maks",
+        "customerRating": "Ocena klientów",
+        "ratingOptions": {
+            "any": "Dowolna",
+            "fourAndAbove": "4★ i więcej",
+            "threeAndAbove": "3★ i więcej"
+        },
+        "messages": {
+            "applied": "Filtry zastosowane pomyślnie",
+            "reset": "Filtry zresetowane"
+        }
+    },
+    "productDetail": {
+        "backCart": "Wróć do koszyka",
+        "back": "Wróć do katalogu",
+        "reviews": "opinii",
+        "description": "Opis",
+        "addToCart": "Do koszyka",
+        "messages": {
+            "addedToCart": "Produkt dodany do koszyka!"
+        }
+    },
+    "loginPage": {
+        "title": "Logowanie",
+        "hint": "Podpowiedź: użyj <b>mor_2314</b> i <b>83r5^_</b>",
+        "username": "Login",
+        "password": "Hasło",
+        "signIn": "Zaloguj się",
+        "backToCatalog": "Powrót do katalogu",
+        "validation": {
+            "username": "Proszę wprowadzić login!",
+            "password": "Proszę wprowadzić hasło!"
+        },
+        "messages": {
+            "success": "Logowanie udane!",
+            "error": "Niepoprawny login lub hasło"
+        }
+    },
+    "profilePage": {
+        "title": "Mój profil",
+        "logout": "Wyloguj",
+        "accountDetails": "Dane konta",
+        "deliveryAddress": "Adres dostawy",
+        "paymentMethod": "Metoda płatności",
+        "labels": {
+            "username": "Login:",
+            "address": "Adres:",
+            "card": "Karta:"
+        },
+        "orderHistory": "Historia zamówień",
+        "noOrders": "Brak zamówień.",
+        "messages": {
+            "logoutSuccess": "Wylogowano pomyślnie"
+        },
+        "modals": {
+            "logout": {
+                "title": "Wyloguj",
+                "content": "Czy na pewno chcesz się wylogować?",
+                "ok": "Tak, wyloguj",
+                "cancel": "Anuluj"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalog",
+        "cart": "Koszyk",
+        "profile": "Profil",
+        "notLoggedIn": "Niezalogowany"
+    },
+    "checkoutPage": {
+        "title": "Finalizacja zamówienia",
+        "warning": "* To jest strona demonstracyjna. Pola są wypełnione automatycznie i nie można ich edytować.",
+        "cardTitle": "Dane dostawy i płatności",
+        "labels": {
+            "ownerName": "Imię właściciela",
+            "country": "Kraj",
+            "street": "Ulica",
+            "city": "Miasto",
+            "cardNumber": "Numer karty",
+            "expiry": "Data ważności",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Wróć",
+            "confirmAndPay": "Potwierdź i zapłać"
+        },
+        "messages": {
+            "success": "Płatność udana! To jest zamówienie testowe."
+        }
+    }
+}

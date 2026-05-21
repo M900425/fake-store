@@ -1,0 +1,21 @@
+@import '@/variables.scss';
+
+.page-header-root {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white-clean;
+    top: 0;
+    z-index: 10;
+    padding: $base-distance $base-distance * 3;
+    border-bottom: 1px solid $antd-color;
+
+    .page-title {
+        margin: 0 !important;
+    }
+}
+
+.login-distance {
+    margin-top: 50px;
+}

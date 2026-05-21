@@ -1,5 +1,6 @@
-import { Row, Col, Typography, Button, Rate, Space } from 'antd';
+import { Row, Col, Typography, Button, Rate, Space, message } from 'antd';
 import { ShoppingCartOutlined, ArrowLeftOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 import { type Product } from '@/types/product';
 
 const { Title, Text, Paragraph } = Typography;
@@ -8,6 +9,7 @@ interface IProps {
     product: Product;
     currentRate: number;
     currentSymbol: string;
+    fromPage: string;
     onBack: () => void;
     onAddToCart: () => void;
 }
@@ -16,10 +18,16 @@ export default function ProductDetail({
     product,
     currentRate,
     currentSymbol,
+    fromPage,
     onBack,
     onAddToCart,
 }: IProps) {
+    const { t } = useTranslation();
     const displayPrice = (product.price * currentRate).toFixed(2);
+    const handleAddToCart = () => {
+        onAddToCart();
+        message.success(t('productDetail.messages.addedToCart'));
+    };
 
     return (
         <div>
@@ -29,7 +37,9 @@ export default function ProductDetail({
                 onClick={onBack}
                 className="back-btn"
             >
-                Back to Catalog
+                {fromPage === 'cart'
+                    ? t('productDetail.backCart')
+                    : t('productDetail.back')}
             </Button>
             <Row>
                 <Col xs={24} md={10} className="image-col">
@@ -46,7 +56,7 @@ export default function ProductDetail({
                         className="info-space"
                     >
                         <Text type="secondary">
-                            {product.category.toUpperCase()}
+                            {t(`categories.${product.category}`)}
                         </Text>
                         <Title level={2} className="no-margin">
                             {product.title}
@@ -58,7 +68,8 @@ export default function ProductDetail({
                                 allowHalf
                             />
                             <Text type="secondary">
-                                ({product.rating.count} reviews)
+                                ({product.rating.count}{' '}
+                                {t('productDetail.reviews')})
                             </Text>
                         </Space>
                         <Title level={1} className="no-margin">
@@ -67,7 +78,7 @@ export default function ProductDetail({
                         </Title>
                         <div>
                             <Title level={4} className="no-margin">
-                                Description
+                                {t('productDetail.description')}
                             </Title>
                             <Paragraph className="no-margin">
                                 {product.description}
@@ -77,9 +88,9 @@ export default function ProductDetail({
                             type="primary"
                             size="large"
                             icon={<ShoppingCartOutlined />}
-                            onClick={onAddToCart}
+                            onClick={handleAddToCart}
                         >
-                            Add to Cart
+                            {t('productDetail.addToCart')}
                         </Button>
                     </Space>
                 </Col>

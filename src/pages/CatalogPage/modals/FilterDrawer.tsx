@@ -8,8 +8,10 @@ import {
     Radio,
     Typography,
     InputNumber,
+    message,
 } from 'antd';
 import { useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { CURRENCIES } from '@/constants/currencies';
 import { type FilterDrawerProps } from '@/types/filters';
 
@@ -20,6 +22,7 @@ export default function FilterDrawer({
     onClose,
     exchangeRates,
 }: FilterDrawerProps) {
+    const { t } = useTranslation();
     const [searchParams, setSearchParams] = useSearchParams();
     const initialFilters = useMemo(() => {
         const savedCurrency = localStorage.getItem('appCurrency');
@@ -69,31 +72,35 @@ export default function FilterDrawer({
 
         setSearchParams(newParams);
         onClose();
+        message.success(t('filterDrawer.messages.applied'));
     };
     const handleReset = () => {
         setSearchParams({});
         onClose();
+        message.success(t('filterDrawer.messages.reset'));
     };
 
     return (
         <Drawer
             key={open ? 'open' : 'closed'}
-            title="Filter Products"
+            title={t('filterDrawer.title')}
             placement="right"
             onClose={onClose}
             open={open}
-            extra={
-                <Space>
-                    <Button onClick={handleReset}>Reset All</Button>
-                    <Button type="primary" onClick={handleApply}>
-                        Apply
+            footer={
+                <div className="footer-filter-buttons">
+                    <Button type="primary" onClick={handleApply} block>
+                        {t('filterDrawer.apply')}
                     </Button>
-                </Space>
+                    <Button onClick={handleReset} block>
+                        {t('filterDrawer.resetAll')}
+                    </Button>
+                </div>
             }
         >
             <Space direction="vertical" size="large" className="full-width">
                 <div>
-                    <Text strong>Currency</Text>
+                    <Text strong>{t('filterDrawer.currency')}</Text>
                     <Radio.Group
                         value={localFilters.currency}
                         onChange={(e) => {
@@ -119,30 +126,38 @@ export default function FilterDrawer({
                     </Radio.Group>
                 </div>
                 <div>
-                    <Text strong>Search</Text>
+                    <Text strong>{t('filterDrawer.search')}</Text>
                     <Input
-                        placeholder="Type product name..."
+                        placeholder={t('filterDrawer.searchPlaceholder')}
                         value={localFilters.search}
                         onChange={(e) => updateLocal('search', e.target.value)}
                         allowClear
                     />
                 </div>
                 <div>
-                    <Text strong>Sort By</Text>
+                    <Text strong>{t('filterDrawer.sortBy')}</Text>
                     <Radio.Group
                         value={localFilters.sort}
                         onChange={(e) => updateLocal('sort', e.target.value)}
                     >
                         <Space wrap>
-                            <Radio value="default">Default</Radio>
-                            <Radio value="price_asc">Price ↑</Radio>
-                            <Radio value="price_desc">Price ↓</Radio>
-                            <Radio value="rating_desc">Top Rated</Radio>
+                            <Radio value="default">
+                                {t('filterDrawer.sortOptions.default')}
+                            </Radio>
+                            <Radio value="price_asc">
+                                {t('filterDrawer.sortOptions.priceAsc')}
+                            </Radio>
+                            <Radio value="price_desc">
+                                {t('filterDrawer.sortOptions.priceDesc')}
+                            </Radio>
+                            <Radio value="rating_desc">
+                                {t('filterDrawer.sortOptions.ratingDesc')}
+                            </Radio>
                         </Space>
                     </Radio.Group>
                 </div>
                 <div>
-                    <Text strong>Price Range</Text>
+                    <Text strong>{t('filterDrawer.priceRange')}</Text>
                     <Slider
                         range
                         min={0}
@@ -160,7 +175,7 @@ export default function FilterDrawer({
                             precision={2}
                             addonBefore={currentSymbol}
                             value={localFilters.minPrice}
-                            placeholder="Min"
+                            placeholder={t('filterDrawer.min')}
                             parser={(value) =>
                                 value ? Number(value.replace(/,/g, '.')) : 0
                             }
@@ -176,7 +191,7 @@ export default function FilterDrawer({
                             precision={2}
                             addonBefore={currentSymbol}
                             value={localFilters.maxPrice}
-                            placeholder="Max"
+                            placeholder={t('filterDrawer.max')}
                             parser={(value) =>
                                 value ? Number(value.replace(/,/g, '.')) : 0
                             }
@@ -188,15 +203,21 @@ export default function FilterDrawer({
                     </Space>
                 </div>
                 <div>
-                    <Text strong>Customer Rating</Text>
+                    <Text strong>{t('filterDrawer.customerRating')}</Text>
                     <Radio.Group
                         value={localFilters.rating}
                         onChange={(e) => updateLocal('rating', e.target.value)}
                     >
                         <Space wrap>
-                            <Radio value={0}>Any</Radio>
-                            <Radio value={4}>4★ & above</Radio>
-                            <Radio value={3}>3★ & above</Radio>
+                            <Radio value={0}>
+                                {t('filterDrawer.ratingOptions.any')}
+                            </Radio>
+                            <Radio value={4}>
+                                {t('filterDrawer.ratingOptions.fourAndAbove')}
+                            </Radio>
+                            <Radio value={3}>
+                                {t('filterDrawer.ratingOptions.threeAndAbove')}
+                            </Radio>
                         </Space>
                     </Radio.Group>
                 </div>

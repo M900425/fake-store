@@ -1,0 +1,16 @@
+.checkout-page-root {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    .checkout-warning-text {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .checkout-actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,164 @@
+{
+    "loginPrompt": {
+        "title": "Prieiga apribota",
+        "subTitle": "Prašome prisijungti, kad peržiūrėtumėte savo profilį ir užsakymų istoriją.",
+        "cta": "Eiti į prisijungimą"
+    },
+    "categories": {
+        "all": "VISOS",
+        "electronics": "Elektronika",
+        "jewelery": "Papuošalai",
+        "men's clothing": "Vyriški drabužiai",
+        "women's clothing": "Moteriški drabužiai"
+    },
+    "cartPage": {
+        "title": "Prekių krepšelis",
+        "clearCart": "Išvalyti krepšelį",
+        "emptyMessage": "Jūsų krepšelis šiuo metu tuščias.",
+        "goToCatalog": "Eiti į katalogą",
+        "total": "Viso:",
+        "proceedToCheckout": "Tęsti apmokėjimą",
+        "loading": "Įkeliami duomenys...",
+        "messages": {
+            "itemRemoved": "Prekė pašalinta iš krepšelio",
+            "cartCleared": "Krepšelis sėkmingai išvalytas",
+            "loginRequired": "Prašome prisijungti prie savo profilio, kad galėtumėte pateikti užsakymą."
+        },
+        "columns": {
+            "product": "Prekė",
+            "price": "Kaina",
+            "quantity": "Kiekis",
+            "total": "Viso",
+            "action": "Veiksmas"
+        },
+        "modals": {
+            "deleteItem": {
+                "title": "Pašalinti prekę",
+                "content": "Ar tikrai norite pašalinti šią prekę iš krepšelio?",
+                "ok": "Taip, pašalinti",
+                "cancel": "Atšaukti"
+            },
+            "clearCart": {
+                "title": "Išvalyti krepšelį",
+                "content": "Ar tikrai norite pašalinti visas prekes iš krepšelio?",
+                "ok": "Taip, išvalyti",
+                "cancel": "Atšaukti"
+            }
+        }
+    },
+    "catalogPage": {
+        "title": "Katalogas",
+        "filters": "Filtrai",
+        "addToCart": "Įdėti į krepšelį",
+        "loading": "Įkeliami duomenys...",
+        "messages": {
+            "addedToCart": "Prekė įdėta į krepšelį!"
+        }
+    },
+    "filterDrawer": {
+        "title": "Filtruoti prekes",
+        "resetAll": "Atstatyti viską",
+        "apply": "Pritaikyti",
+        "currency": "Valiuta",
+        "search": "Paieška",
+        "searchPlaceholder": "Įveskite prekės pavadinimą...",
+        "sortBy": "Rikiuoti pagal",
+        "sortOptions": {
+            "default": "Numatyta",
+            "priceAsc": "Kaina ↑",
+            "priceDesc": "Kaina ↓",
+            "ratingDesc": "Geriausiai įvertinta"
+        },
+        "priceRange": "Kainų diapazonas",
+        "min": "Min",
+        "max": "Max",
+        "customerRating": "Pirkėjų įvertinimas",
+        "ratingOptions": {
+            "any": "Bet koks",
+            "fourAndAbove": "4★ ir daugiau",
+            "threeAndAbove": "3★ ir daugiau"
+        },
+        "messages": {
+            "applied": "Filtrai sėkmingai pritaikyti",
+            "reset": "Filtrai atstatyti į numatytuosius"
+        }
+    },
+    "productDetail": {
+        "backCart": "Grįžti į krepšelį",
+        "back": "Atgal į katalogą",
+        "reviews": "atsiliepimai",
+        "description": "Aprašymas",
+        "addToCart": "Įdėti į krepšelį",
+        "messages": {
+            "addedToCart": "Prekė įdėta į krepšelį!"
+        }
+    },
+    "loginPage": {
+        "title": "Prisijungimas",
+        "hint": "Patarimas: naudokite <b>mor_2314</b> ir <b>83r5^_</b>",
+        "username": "Vartotojo vardas",
+        "password": "Slaptažodis",
+        "signIn": "Prisijungti",
+        "backToCatalog": "Atgal į katalogą",
+        "validation": {
+            "username": "Prašome įvesti vartotojo vardą!",
+            "password": "Prašome įvesti slaptažodį!"
+        },
+        "messages": {
+            "success": "Sėkmingai prisijungėte!",
+            "error": "Neteisingas vartotojo vardas arba slaptažodis"
+        }
+    },
+    "profilePage": {
+        "title": "Mano profilis",
+        "logout": "Atsijungti",
+        "accountDetails": "Paskyros duomenys",
+        "deliveryAddress": "Pristatymo adresas",
+        "paymentMethod": "Mokėjimo būdas",
+        "labels": {
+            "username": "Vartotojo vardas:",
+            "address": "Adresas:",
+            "card": "Kortelė:"
+        },
+        "orderHistory": "Užsakymų istorija",
+        "noOrders": "Užsakymų nerasta.",
+        "messages": {
+            "logoutSuccess": "Sėkmingai atsijungėte"
+        },
+        "modals": {
+            "logout": {
+                "title": "Atsijungti",
+                "content": "Ar tikrai norite atsijungti nuo savo paskyros?",
+                "ok": "Taip, atsijungti",
+                "cancel": "Atšaukti"
+            }
+        }
+    },
+    "layout": {
+        "catalog": "Katalogas",
+        "cart": "Krepšelis",
+        "profile": "Profilis",
+        "notLoggedIn": "Neprisijungęs"
+    },
+    "checkoutPage": {
+        "title": "Užsakymo pateikimas",
+        "warning": "* Tai demonstracinis puslapis. Laukai užpildyti automatiškai ir jų negalima redaguoti.",
+        "cardTitle": "Pristatymo ir mokėjimo duomenys",
+        "labels": {
+            "ownerName": "Savininko vardas",
+            "country": "Šalis",
+            "street": "Gatvė",
+            "city": "Miestas",
+            "cardNumber": "Kortelės numeris",
+            "expiry": "Galiojimo laikas",
+            "cvv": "CVV"
+        },
+        "buttons": {
+            "return": "Grįžti",
+            "confirmAndPay": "Patvirtinti ir sumokėti"
+        },
+        "messages": {
+            "success": "Mokėjimas sėkmingas! Tai bandomasis užsakymas."
+        }
+    }
+}
