@@ -14,6 +14,10 @@
     }
 
     .category-tabs {
+        .ant-tabs-nav {
+            margin-bottom: 0 !important;
+        }
+
         .category-tabs.ant-tabs-tab {
             font-weight: 500;
         }
