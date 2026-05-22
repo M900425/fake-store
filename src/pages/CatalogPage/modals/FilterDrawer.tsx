@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import {
     Drawer,
     Button,
@@ -24,6 +24,14 @@ export default function FilterDrawer({
 }: FilterDrawerProps) {
     const { t } = useTranslation();
     const [searchParams, setSearchParams] = useSearchParams();
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1065);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 1065);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const initialFilters = useMemo(() => {
         const savedCurrency = localStorage.getItem('appCurrency');
         const currentCurrency =
@@ -87,19 +95,33 @@ export default function FilterDrawer({
             placement="right"
             onClose={onClose}
             open={open}
+            width={isMobile ? '100%' : 378}
             footer={
                 <div className="footer-filter-buttons">
-                    <Button type="primary" onClick={handleApply} block>
+                    <Button
+                        className="filter-buttons"
+                        type="primary"
+                        onClick={handleApply}
+                        block
+                    >
                         {t('filterDrawer.apply')}
                     </Button>
-                    <Button onClick={handleReset} block>
+                    <Button
+                        className="filter-buttons"
+                        onClick={handleReset}
+                        block
+                    >
                         {t('filterDrawer.resetAll')}
                     </Button>
                 </div>
             }
         >
-            <Space direction="vertical" size="large" className="full-width">
-                <div>
+            <Space
+                direction="vertical"
+                size="large"
+                className="filter-drawer-content"
+            >
+                <div className="currency">
                     <Text strong>{t('filterDrawer.currency')}</Text>
                     <Radio.Group
                         value={localFilters.currency}
@@ -134,7 +156,7 @@ export default function FilterDrawer({
                         allowClear
                     />
                 </div>
-                <div>
+                <div className="sorting">
                     <Text strong>{t('filterDrawer.sortBy')}</Text>
                     <Radio.Group
                         value={localFilters.sort}
@@ -202,7 +224,7 @@ export default function FilterDrawer({
                         />
                     </Space>
                 </div>
-                <div>
+                <div className='rating'>
                     <Text strong>{t('filterDrawer.customerRating')}</Text>
                     <Radio.Group
                         value={localFilters.rating}

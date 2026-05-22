@@ -14,8 +14,9 @@
     .page-title {
         margin: 0 !important;
     }
-}
 
-.login-distance {
-    margin-top: 50px;
+    @media screen and (max-width: 1065px) {
+        top: 60px;
+        padding: $base-distance $base-distance * 2;
+    }
 }

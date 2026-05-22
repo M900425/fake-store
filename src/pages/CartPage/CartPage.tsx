@@ -1,5 +1,15 @@
-import { useState } from 'react';
-import { Typography, Table, Button, Space, Row, Col, message } from 'antd';
+import { useState, useEffect } from 'react';
+import {
+    Typography,
+    Table,
+    Button,
+    Space,
+    Row,
+    Col,
+    message,
+    List,
+    Card,
+} from 'antd';
 import { DeleteOutlined, PlusOutlined, MinusOutlined } from '@ant-design/icons';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -23,6 +33,12 @@ export default function CartPage() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [searchParams] = useSearchParams();
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1065);
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 1065);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
     const [itemToDelete, setItemToDelete] = useState<number | null>(null);
     const [isClearModalOpen, setIsClearModalOpen] = useState(false);
@@ -81,11 +97,52 @@ export default function CartPage() {
         }
         navigate('/checkout');
     };
+    const QuantityControls = ({
+        record,
+        quantity,
+    }: {
+        record: CartItem;
+        quantity: number;
+    }) => (
+        <Space align="center">
+            <Button
+                shape="circle"
+                size="small"
+                icon={<MinusOutlined />}
+                onClick={() => {
+                    if (quantity > 1) {
+                        dispatch(
+                            updateQuantity({
+                                id: record.id,
+                                quantity: quantity - 1,
+                            }),
+                        );
+                    }
+                }}
+                disabled={quantity <= 1}
+            />
+            <Text>{quantity}</Text>
+            <Button
+                shape="circle"
+                size="small"
+                icon={<PlusOutlined />}
+                onClick={() =>
+                    dispatch(
+                        updateQuantity({
+                            id: record.id,
+                            quantity: quantity + 1,
+                        }),
+                    )
+                }
+            />
+        </Space>
+    );
     const columns = [
         {
             title: t('cartPage.columns.product'),
             dataIndex: 'product',
             key: 'product',
+            width: 450,
             render: (_: unknown, record: CartItem) => (
                 <div
                     className="cart-product-link"
@@ -110,6 +167,7 @@ export default function CartPage() {
             title: t('cartPage.columns.price'),
             dataIndex: 'price',
             key: 'price',
+            align: 'center' as const,
             render: (_: unknown, record: CartItem) => (
                 <Text>
                     {currentSymbol}
@@ -121,44 +179,16 @@ export default function CartPage() {
             title: t('cartPage.columns.quantity'),
             dataIndex: 'quantity',
             key: 'quantity',
+            width: 100,
+            align: 'center' as const,
             render: (quantity: number, record: CartItem) => (
-                <Space align="center">
-                    <Button
-                        shape="circle"
-                        size="small"
-                        icon={<MinusOutlined />}
-                        onClick={() => {
-                            if (quantity > 1) {
-                                dispatch(
-                                    updateQuantity({
-                                        id: record.id,
-                                        quantity: quantity - 1,
-                                    }),
-                                );
-                            }
-                        }}
-                        disabled={quantity <= 1}
-                    />
-                    <Text>{quantity}</Text>
-                    <Button
-                        shape="circle"
-                        size="small"
-                        icon={<PlusOutlined />}
-                        onClick={() =>
-                            dispatch(
-                                updateQuantity({
-                                    id: record.id,
-                                    quantity: quantity + 1,
-                                }),
-                            )
-                        }
-                    />
-                </Space>
+                <QuantityControls record={record} quantity={quantity} />
             ),
         },
         {
             title: t('cartPage.columns.total'),
             key: 'total',
+            align: 'center' as const,
             render: (_: unknown, record: CartItem) => (
                 <Text strong>
                     {currentSymbol}
@@ -169,6 +199,8 @@ export default function CartPage() {
         {
             title: t('cartPage.columns.action'),
             key: 'action',
+            width: 50,
+            align: 'center' as const,
             render: (_: unknown, record: CartItem) => (
                 <Button
                     type="text"
@@ -196,7 +228,6 @@ export default function CartPage() {
                     )
                 }
             />
-
             {cartItems.length === 0 ? (
                 <div className="empty-cart">
                     <Text type="secondary">{t('cartPage.emptyMessage')}</Text>
@@ -209,14 +240,80 @@ export default function CartPage() {
                 </div>
             ) : (
                 <>
-                    <Table
-                        columns={columns}
-                        dataSource={cartItems}
-                        rowKey="id"
-                        className="cart-table"
-                        pagination={false}
-                    />
-                    <Row justify="end">
+                    {isMobile ? (
+                        <List
+                            className="mobile-cart-list"
+                            dataSource={cartItems}
+                            renderItem={(item) => (
+                                <List.Item className="mobile-cart-item">
+                                    <Card size="small" className="full-width">
+                                        <div className="mobile-item-header">
+                                            <div
+                                                className="cart-product-link"
+                                                onClick={() =>
+                                                    navigate(
+                                                        `/catalog/${item.id}`,
+                                                        {
+                                                            state: {
+                                                                from: 'cart',
+                                                            },
+                                                        },
+                                                    )
+                                                }
+                                            >
+                                                <img
+                                                    src={item.image}
+                                                    alt={item.title}
+                                                    className="cart-item-image"
+                                                />
+                                                <Text
+                                                    strong
+                                                    className="mobile-item-title"
+                                                >
+                                                    {item.title}
+                                                </Text>
+                                            </div>
+                                            <Button
+                                                type="text"
+                                                danger
+                                                icon={<DeleteOutlined />}
+                                                onClick={() =>
+                                                    handleDeleteClick(item.id)
+                                                }
+                                            />
+                                        </div>
+                                        <div className="mobile-item-footer">
+                                            <QuantityControls
+                                                record={item}
+                                                quantity={item.quantity}
+                                            />
+                                            <Text
+                                                strong
+                                                className="mobile-item-price"
+                                            >
+                                                {currentSymbol}
+                                                {(
+                                                    item.price *
+                                                    item.quantity *
+                                                    currentRate
+                                                ).toFixed(2)}
+                                            </Text>
+                                        </div>
+                                    </Card>
+                                </List.Item>
+                            )}
+                        />
+                    ) : (
+                        <Table
+                            columns={columns}
+                            dataSource={cartItems}
+                            rowKey="id"
+                            className="cart-table"
+                            pagination={false}
+                        />
+                    )}
+
+                    <Row justify={isMobile ? 'center' : 'end'}>
                         <Col xs={24} sm={12} md={8} className="cart-summary">
                             <Space
                                 direction="vertical"

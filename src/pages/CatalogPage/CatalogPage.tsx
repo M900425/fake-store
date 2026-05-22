@@ -1,5 +1,15 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Card, Row, Col, Typography, Tabs, Button, Rate, message } from 'antd';
+import {
+    Card,
+    Row,
+    Col,
+    Typography,
+    Tabs,
+    Button,
+    Rate,
+    message,
+    Select,
+} from 'antd';
 import { ShoppingCartOutlined, FilterOutlined } from '@ant-design/icons';
 import {
     useParams,
@@ -152,12 +162,16 @@ export default function CatalogPage() {
             </Button>
         ),
     };
+    const selectOptions = tabItems.map((item) => ({
+        value: item.key,
+        label: item.label,
+    }));
 
     return (
         <div className="catalog-page-root">
             <div className="header">
                 <div className="catalog-header">
-                    <Title level={2} className="no-margin">
+                    <Title level={2} className="no-margin catalog-title">
                         {t('catalogPage.title')}
                     </Title>
                 </div>
@@ -165,16 +179,32 @@ export default function CatalogPage() {
                     activeKey={activeCategory}
                     items={tabItems}
                     onChange={handleTabChange}
-                    className="category-tabs"
+                    className="category-tabs desktop-categories"
                     tabBarExtraContent={tabBarExtra}
                 />
+                <div className="mobile-categories">
+                    <Select
+                        value={activeCategory}
+                        onChange={handleTabChange}
+                        options={selectOptions}
+                        className="mobile-category-select"
+                        size="large"
+                    />
+                    <Button
+                        type="primary"
+                        icon={<FilterOutlined />}
+                        onClick={() => setIsFilterDrawerOpen(true)}
+                        size="large"
+                    >
+                        {t('catalogPage.filters')}
+                    </Button>
+                </div>
             </div>
             <Row className="catalog-products-row" gutter={[24, 24]}>
                 {filteredProducts.map((product) => {
                     const displayPrice = (product.price * currentRate).toFixed(
                         2,
                     );
-
                     return (
                         <Col xs={24} sm={12} md={8} lg={6} key={product.id}>
                             <Card

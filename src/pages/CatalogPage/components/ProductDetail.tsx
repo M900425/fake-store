@@ -24,13 +24,14 @@ export default function ProductDetail({
 }: IProps) {
     const { t } = useTranslation();
     const displayPrice = (product.price * currentRate).toFixed(2);
+
     const handleAddToCart = () => {
         onAddToCart();
         message.success(t('productDetail.messages.addedToCart'));
     };
 
     return (
-        <div>
+        <div className="product-detail-root">
             <Button
                 type="link"
                 icon={<ArrowLeftOutlined />}
@@ -41,6 +42,7 @@ export default function ProductDetail({
                     ? t('productDetail.backCart')
                     : t('productDetail.back')}
             </Button>
+
             <Row>
                 <Col xs={24} md={10} className="image-col">
                     <img
@@ -58,7 +60,7 @@ export default function ProductDetail({
                         <Text type="secondary">
                             {t(`categories.${product.category}`)}
                         </Text>
-                        <Title level={2} className="no-margin">
+                        <Title level={2} className="no-margin detail-title">
                             {product.title}
                         </Title>
                         <Space>
@@ -72,11 +74,11 @@ export default function ProductDetail({
                                 {t('productDetail.reviews')})
                             </Text>
                         </Space>
-                        <Title level={1} className="no-margin">
+                        <Title level={1} className="no-margin detail-price">
                             {currentSymbol}
                             {displayPrice}
                         </Title>
-                        <div>
+                        <div className="detail-description">
                             <Title level={4} className="no-margin">
                                 {t('productDetail.description')}
                             </Title>
@@ -89,6 +91,7 @@ export default function ProductDetail({
                             size="large"
                             icon={<ShoppingCartOutlined />}
                             onClick={handleAddToCart}
+                            className="detail-add-to-cart-btn"
                         >
                             {t('productDetail.addToCart')}
                         </Button>

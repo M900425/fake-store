@@ -87,6 +87,7 @@
             padding: 0 !important;
             font-size: $base-distance !important;
             background-color: $orange !important;
+            line-height: 12px !important;
         }
     }
 
@@ -188,5 +189,98 @@
 .language-list {
     .ant-dropdown-menu {
         max-height: 55vh !important;
+    }
+}
+
+.mobile-top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: $dark-navy;
+    height: 60px;
+    line-height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    border-bottom: 1px solid $black;
+
+    .mobile-header-cart-btn {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.75;
+        }
+
+        .anticon {
+            color: $light-gray !important;
+            font-size: 20px !important;
+        }
+    }
+
+    .mobile-header-menu-btn {
+        color: $white-clean;
+        font-size: 20px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+
+    .mobile-header-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.75;
+        }
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
+
+        span {
+            color: $white-clean;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+.mobile-close-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    .mobile-close-btn {
+        color: $light-gray;
+
+        &:hover {
+            color: $white-clean;
+            background: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .sidebar-logo-container {
+        justify-content: flex-start !important;
+        padding-left: 20px !important;
     }
 }
