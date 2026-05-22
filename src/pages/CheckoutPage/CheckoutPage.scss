@@ -1,16 +1,35 @@
+@import '@/variables.scss';
+
 .checkout-page-root {
     max-width: 600px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: $base-distance * 5 auto;
+    padding: 0 $base-distance * 2.5;
+
+    @media screen and (max-width: 768px) {
+        margin: $base-distance * 2.5 auto;
+        padding: 0 $base-distance * 2;
+    }
 
     .checkout-warning-text {
         display: block;
-        margin-bottom: 24px;
+        margin-bottom: $base-distance * 3;
     }
 
     .checkout-actions {
+        display: flex;
         width: 100%;
         justify-content: space-between;
-        margin-top: 16px;
+        margin-top: $base-distance * 2;
+        gap: $base-distance * 2;
+
+        @media screen and (max-width: 480px) {
+            flex-direction: column-reverse;
+
+            .checkout-back-btn,
+            .checkout-submit-btn {
+                width: 100%;
+                height: $base-distance * 6;
+            }
+        }
     }
 }

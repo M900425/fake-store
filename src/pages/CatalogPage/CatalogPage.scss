@@ -5,12 +5,58 @@
     flex-direction: column;
     position: relative;
 
+    @media screen and (max-width: 1065px) {
+        padding: 0;
+
+        .detail-add-to-cart-btn {
+            width: 100%;
+        }
+    }
+
     .header {
         position: sticky;
         background-color: $white-clean;
         top: 0;
-        z-index: 1;
+        z-index: 10;
         padding: 0 $base-distance * 3 0 $base-distance * 3;
+        border-bottom: 1px solid $light-gray;
+        margin-bottom: $base-distance * 2;
+
+        @media screen and (max-width: 1065px) {
+            top: 60px;
+            padding: $base-distance * 2;
+        }
+    }
+
+    .desktop-categories {
+        @media screen and (max-width: 1065px) {
+            display: none !important;
+        }
+
+        .ant-tabs-nav {
+            margin-bottom: 0 !important;
+        }
+
+        .category-tabs.ant-tabs-tab {
+            font-weight: 500;
+        }
+    }
+
+    .mobile-categories {
+        display: none;
+
+        @media screen and (max-width: 1065px) {
+            display: flex;
+            gap: $base-distance * 2;
+            align-items: center;
+            width: 100%;
+            margin-top: $base-distance * 2;
+            padding-bottom: $base-distance * 2;
+
+            .mobile-category-select {
+                flex: 1;
+            }
+        }
     }
 
     .category-tabs {
@@ -104,17 +150,30 @@
 .back-btn {
     margin: $base-distance * 3;
     font-size: $base-distance * 3;
+
+    @media screen and (max-width: 1065px) {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .image-col {
     text-align: center;
     padding: $base-distance * 5;
+
+    @media screen and (max-width: 1065px) {
+        padding: $base-distance * 3;
+    }
 }
 
 .main-image {
     max-height: 400px;
     width: 100%;
     object-fit: contain;
+
+    @media screen and (max-width: 1065px) {
+        max-height: 250px;
+    }
 }
 
 .info-space {
@@ -128,4 +187,39 @@
 .footer-filter-buttons {
     display: flex;
     gap: $base-distance;
+
+    @media screen and (max-width: 1065px) {
+        justify-content: space-around;
+
+        .filter-buttons {
+            width: 33%;
+        }
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .filter-drawer-content {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+
+        .currency {
+            display: flex;
+            flex-direction: column;
+            gap: $base-distance;
+        }
+
+        .sorting {
+            display: flex;
+            flex-direction: column;
+            gap: $base-distance;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: column;
+            gap: $base-distance;
+        }
+    }
 }

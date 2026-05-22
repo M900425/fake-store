@@ -1,15 +1,5 @@
 import { useState, useEffect } from 'react';
-import {
-    Form,
-    Input,
-    Button,
-    Card,
-    Row,
-    Col,
-    message,
-    Typography,
-    Space,
-} from 'antd';
+import { Form, Input, Button, Card, Row, Col, message, Typography } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
@@ -60,7 +50,7 @@ export default function CheckoutPage() {
             <Card title={t('checkoutPage.cardTitle')}>
                 <Form layout="vertical" onFinish={handleSimulatePayment}>
                     <Row gutter={16}>
-                        <Col span={12}>
+                        <Col xs={24} md={12}>
                             <Form.Item
                                 label={t('checkoutPage.labels.ownerName')}
                             >
@@ -72,7 +62,7 @@ export default function CheckoutPage() {
                                 />
                             </Form.Item>
                         </Col>
-                        <Col span={12}>
+                        <Col xs={24} md={12}>
                             <Form.Item label={t('checkoutPage.labels.country')}>
                                 <Input
                                     disabled
@@ -82,7 +72,7 @@ export default function CheckoutPage() {
                         </Col>
                     </Row>
                     <Row gutter={16}>
-                        <Col span={16}>
+                        <Col xs={24} md={16}>
                             <Form.Item label={t('checkoutPage.labels.street')}>
                                 <Input
                                     disabled
@@ -90,7 +80,7 @@ export default function CheckoutPage() {
                                 />
                             </Form.Item>
                         </Col>
-                        <Col span={8}>
+                        <Col xs={24} md={8}>
                             <Form.Item label={t('checkoutPage.labels.city')}>
                                 <Input
                                     disabled
@@ -100,7 +90,7 @@ export default function CheckoutPage() {
                         </Col>
                     </Row>
                     <Row gutter={16}>
-                        <Col span={12}>
+                        <Col xs={24} md={12}>
                             <Form.Item
                                 label={t('checkoutPage.labels.cardNumber')}
                             >
@@ -112,7 +102,7 @@ export default function CheckoutPage() {
                                 />
                             </Form.Item>
                         </Col>
-                        <Col span={6}>
+                        <Col>
                             <Form.Item label={t('checkoutPage.labels.expiry')}>
                                 <Input
                                     disabled
@@ -122,16 +112,17 @@ export default function CheckoutPage() {
                                 />
                             </Form.Item>
                         </Col>
-                        <Col span={6}>
+                        <Col xs={12} md={6}>
                             <Form.Item label={t('checkoutPage.labels.cvv')}>
                                 <Input.Password disabled value="***" />
                             </Form.Item>
                         </Col>
                     </Row>
-                    <Space className="checkout-actions">
+                    <div className="checkout-actions">
                         <Button
                             onClick={() => navigate('/cart')}
                             disabled={loading}
+                            className="checkout-back-btn"
                         >
                             {t('checkoutPage.buttons.return')}
                         </Button>
@@ -139,10 +130,11 @@ export default function CheckoutPage() {
                             type="primary"
                             htmlType="submit"
                             loading={loading}
+                            className="checkout-submit-btn"
                         >
                             {t('checkoutPage.buttons.confirmAndPay')}
                         </Button>
-                    </Space>
+                    </div>
                 </Form>
             </Card>
         </div>

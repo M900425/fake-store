@@ -7,7 +7,7 @@ export const LoginPrompt = () => {
     const navigate = useNavigate();
     const { t } = useTranslation();
     return (
-        <div className="login-distance">
+        <div>
             <Result
                 status="403"
                 title={t('loginPrompt.title')}
